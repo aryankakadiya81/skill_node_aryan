@@ -162,3 +162,5 @@
 
 
 
+--delete 
+--delete from tablename
