@@ -160,7 +160,3 @@
 
 --drop tables client_master,product_master,salesman_master,students;
 
-
-
---delete 
---delete from tablename
