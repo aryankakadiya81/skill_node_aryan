@@ -160,3 +160,63 @@
 
 --drop tables client_master,product_master,salesman_master,students;
 
+--create table mybag(
+--    colour varchar(30),
+--    compartment int,
+--    capacity varchar(30),
+--    constraint pk_mybeg primary key(colour,compartment,capacity)
+--);
+
+--insert into mybag values("R",4,"25L");
+--insert into mybag values("G",4,"25L");
+--insert into mybag values("B",4,"25L");
+--
+--insert into mybag values("R",4,"30L");
+--insert into mybag values("G",4,"30L");
+--insert into mybag values("B",4,"30L");
+--
+--insert into mybag values("R",4,"35L");
+--insert into mybag values("G",4,"35L");
+--insert into mybag values("B",4,"35L");
+--
+--insert into mybag values("R",5,"25L");
+--insert into mybag values("G",5,"25L");
+--insert into mybag values("B",5,"25L");
+--
+--insert into mybag values("R",5,"30L");
+--insert into mybag values("G",5,"30L");
+--insert into mybag values("B",5,"30L");
+--
+--insert into mybag values("R",5,"35L");
+--insert into mybag values("G",5,"35L");
+--insert into mybag values("B",5,"35L");
+--
+--insert into mybag values("R",6,"25L");
+--insert into mybag values("G",6,"25L");
+--insert into mybag values("B",6,"25L");
+--
+--insert into mybag values("R",6,"30L");
+--insert into mybag values("G",6,"30L");
+--insert into mybag values("B",6,"30L");
+--
+--insert into mybag values("R",6,"35L");
+--insert into mybag values("G",6,"35L");
+--insert into mybag values("B",6,"35L");
+
+--select * from mybag where compartment = 4;
+--select * from mybag where compartment = 5;
+--select * from mybag where compartment = 6;
+
+--select * from mybag where colour = "R";
+--select * from mybag where colour = "G";
+--select * from mybag where colour = "B";
+
+--select * from mybag where capacity = "25L";
+--select * from mybag where capacity = "30L";
+--select * from mybag where capacity = "35L";
+
+
+
+
+
+
