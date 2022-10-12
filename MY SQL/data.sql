@@ -215,6 +215,8 @@
 --select * from mybag where capacity = "30L";
 --select * from mybag where capacity = "35L";
 
+--drop table mybag;
+
 
 
 
