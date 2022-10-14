@@ -367,6 +367,8 @@
 
 -- select * from product_master where qtyonhand not in(10,2);
 
+-- select * from product_master where qtyonhand in(10,2);
+
 -- select * from salesman_master order by salesmanname,salesman_no;
 
 -- select * from salesman_master order by salesmanname desc;
