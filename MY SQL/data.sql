@@ -300,8 +300,83 @@
 
 -- update sales_order_details set productno = 'P0345' where Orderno = 'C'; 
 
+-- select * from sales_order,sales_order_details;
 
--- select * from sales_order_details;
+-- create table mybag(
+--     colour varchar(30),
+--     compartment int,
+--     capacity varchar(30),
+--     colour1 varchar(30),
+--     compartment1 int,
+--     capacity1 varchar(30),
+--     colour2 varchar(30),
+--     compartment2 int,
+--     capacity2 varchar(30),
+--     colour3 varchar(30),
+--     compartment3 int,
+--     capacity3 varchar(30)
+--     colour4 varchar(30),
+--     compartment4 int,
+--     capacity4 varchar(30),
+--     colour5 varchar(30),
+--     compartment5 int,
+--     capacity5 varchar(30),
+--     constraint pk_mybag primary key (compartment,compartment1,compartment2,compartment3,compartment4,compartment5
+--     colour)
+--     );
+
+-- select * from client_master limit 2;
+
+-- select * from client_master limit 5;
+
+-- select distinct city,state from client_master;
+
+-- select distinct city from client_master;
+
+-- select city from client_master;
+
+-- select * from client_master where name like 'ravi';
+
+-- select * from client_master where name like 'i';
+
+-- select * from client_master where name like '______';
+
+-- select * from client_master where name like '____';
+
+-- select * from client_master where name like '_____';
+
+-- select * from client_master where name like '_a__';
+
+-- select * from client_master where name like '_r_';
+
+-- select * from client_master where name like '%r%';
+
+-- select * from client_master where name like '%a%';
+
+-- select * from client_master where name like '%d%';
+
+-- select * from client_master where name like '%n_';
+
+-- select * from client_master where name like '_a%';
+
+-- select * from client_master where name like '%A';
+
+-- select * from client_master where name like 'R%';
+
+-- select * from client_master where name like 'A%';
+
+-- select * from product_master where qtyonhand not in(10,2);
+
+-- select * from salesman_master order by salesmanname,salesman_no;
+
+-- select * from salesman_master order by salesmanname desc;
+
+-- select * from product_master order by description;
+
+
+
+
+
 
 
 
