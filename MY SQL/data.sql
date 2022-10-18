@@ -434,6 +434,32 @@
 
 
 
+-- select * from client_master where name like '_a%';
 
+-- select * from client_master where city like 'm%';
 
+-- select * from client_master where city = 'delhi' or city = 'bombay';
 
+-- select * from client_master where baldue > 10000;
+
+-- select * from sales_order where Orderdate < '2004-07-1' and Orderdate >= '2004-06-1';
+
+-- select * from client_master where Clientno = 'C00001' or Clientno = 'C00002';
+
+-- select * from product_master where sellprice > 500 and sellprice <= 750;
+
+-- alter table product_master add column new_price int;
+-- update product_master set new_price=(sellprice*0.15)+sellprice where sellprice>500;
+-- select * from product_master;
+
+-- select name,city,state from client_master where state != 'Maharashtra'; 
+
+-- SELECT COUNT(Orderno) as total_orders FROM sales_order_details;
+
+-- SELECT AVG(sellprice) as avg_price FROM product_master;
+
+-- SELECT min(sellprice) as min_price, max(sellprice) as max_price FROM product_master;
+
+-- SELECT COUNT(sellprice) as under_500 FROM product_master where sellprice<=500;
+
+-- select * from product_master where qtyonhand < recorderlvl;
