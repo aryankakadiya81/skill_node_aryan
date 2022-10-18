@@ -425,6 +425,7 @@
 -- select lpad(description, 17, "aryan") as lap1, lpad(productno, 16, "kp") as lap2 from product_master;
 
 -- select ltrim("       aryan ");
+-- select ltrim("       aryan ");
 -- select ltrim("     kakadiya ") as trimfun;
 -- select ltrim(Orderno) as trimfun from sales_order_details;
 -- select ltrim(Orderno) as trimfun, ltrim(Productrate) from sales_order_details;
