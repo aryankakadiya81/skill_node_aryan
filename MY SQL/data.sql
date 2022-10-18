@@ -375,7 +375,60 @@
 
 -- select * from product_master order by description;
 
+-- source D:\ARYAN KAKADIYA\PROGRAMME\NODE_JS\MY SQL\data.sql
+ 
+-- select LEFT("aryan kakadiya", 6);
+-- select LEFT("aryan kakadiya", 7) as ExtractString;
+-- select LEFT(Orderno, 5) as ExtractString from sales_order_details;
+-- select LEFT(Orderno, 5) from sales_order_details;
+-- select LEFT(Orderno, 5) as ExtractString, LEFT(Productrate, 2) as Extract from sales_order_details;
 
+-- select length("aryan kakadiya");
+-- select length("aryan kakadiya") as lengthfun;
+-- select length(Orderno) as lengthfun from sales_order_details;
+-- select length(Orderno),length(Productrate) from sales_order_details;
+-- select length(Orderno),length(Productrate) as lnth from sales_order_details;
+-- select length(Orderno) as num,length(Productrate) from sales_order_details;
+-- select length(Orderno) as comm,length(Productrate) as lnth from sales_order_details;
+
+-- select lower("ARyan KAKADiya");
+-- select lower("ARyan KAKADiya") as lower;
+-- select lower(Orderno) as lower from sales_order_details;
+-- select lower(Orderno),lower(Productrate) from sales_order_details;
+-- select lower(Orderno),lower(Productrate) as lnth from sales_order_details;
+-- select lower(Orderno) as num,lower(Productrate) from sales_order_details;
+-- select lower(Orderno) as comm,lower(Productrate) as low from sales_order_details;
+
+-- select upper("ARyan KAKADiya");
+-- select upper("ARyan KAKADiya") as up;
+-- select upper(Orderno) as up from sales_order_details;
+-- select upper(Orderno),upper(Productrate) from sales_order_details;
+-- select upper(Orderno),upper(Productrate) as up from sales_order_details;
+-- select upper(Orderno) as up1, upper(Productrate) from sales_order_details;
+-- select upper(Orderno) as up1, upper(Productrate) as up2 from sales_order_details;
+
+-- select upper("ARyan KAKADiya");
+-- select upper("ARyan KAKADiya") as up;
+-- select upper(Orderno) as up from sales_order_details;
+-- select upper(Orderno),upper(Productrate) from sales_order_details;
+-- select upper(Orderno),upper(Productrate) as up from sales_order_details;
+-- select upper(Orderno) as up1, upper(Productrate) from sales_order_details;
+-- select upper(Orderno) as up1, upper(Productrate) as up2 from sales_order_details;
+
+-- select lpad("ARyan KAKADiya", 14, "ABC");
+-- select lpad("ARyan KAKADiya", 17, "ABC");
+-- select lpad("ARyan KAKADiya", 20, "ABC");
+-- select lpad("ARyan KAKADiya", 22, "ABC");
+-- select lpad("ARyan KAKADiya", 17, "ABC") AS lap;
+-- select lpad(description, 17, "aryan") as lap1 from product_master;
+-- select lpad(description, 17, "aryan") as lap1, lpad(productno, 16, "kp") from product_master;
+-- select lpad(description, 17, "aryan") as lap1, lpad(productno, 16, "kp") as lap2 from product_master;
+
+-- select ltrim("       aryan ");
+-- select ltrim("     kakadiya ") as trimfun;
+-- select ltrim(Orderno) as trimfun from sales_order_details;
+-- select ltrim(Orderno) as trimfun, ltrim(Productrate) from sales_order_details;
+-- select ltrim(Orderno) as trimfun, ltrim(Productrate) as trimfun1 from sales_order_details;
 
 
 
