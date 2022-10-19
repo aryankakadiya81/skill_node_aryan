@@ -466,3 +466,112 @@
 -- SELECT COUNT(sellprice) as under_500 FROM product_master where sellprice<=500;
 
 -- select * from product_master where qtyonhand < recorderlvl;
+
+-- select curdate();
+
+-- select now();
+
+-- SELECT ADDDATE("2017-06-15 09:34:21", INTERVAL 15 MINUTE);
+-- SELECT ADDDATE(now(), INTERVAL -3 HOUR) as '-3_hour';
+-- SELECT ADDDATE(now(), INTERVAL -2 MONTH);
+
+-- SELECT ADDTIME("2017-06-15 09:34:21", "2");
+-- SELECT ADDTIME("2017-06-15 09:34:21.000001", "5.000003");
+-- SELECT ADDTIME("2017-06-15 09:34:21.000001", "2:10:5.000003");
+-- SELECT ADDTIME("2017-06-15 09:34:21.000001", "5 2:10:5.000003");
+-- SELECT ADDTIME("09:34:21.000001", "2:10:5.000003") as addtime;
+
+-- SELECT CURDATE();
+-- SELECT CURDATE() + 1 as cur;
+
+-- SELECT CURRENT_DATE();
+-- SELECT CURRENT_DATE() + 1; -- second day(+1)
+
+-- SELECT CURRENT_TIME() + 1;-- second day(+1)
+-- SELECT CURRENT_TIME() ;
+
+-- SELECT CURRENT_TIMESTAMP() + 1;
+-- SELECT CURRENT_TIMESTAMP();
+
+-- SELECT CURTIME();
+-- SELECT CURTIME() + 1; -- (+1) second add
+
+-- SELECT DATE("2017-06-15 09:34:21");
+-- SELECT DATE("The date is 2017-06-15");
+-- SELECT DATE(OrderDate) FROM Orders; -- from tables
+
+-- SELECT DATEDIFF("2017-06-25", "2017-06-15"); -- for add time
+-- SELECT DATEDIFF("2017-06-25 09:34:21", "2017-06-15 15:25:35");
+-- SELECT DATEDIFF(now(),"2022-01-19");
+-- SELECT DATEDIFF("2017-01-01", "2016-12-24");
+
+-- SELECT DATE_ADD("2017-06-15", INTERVAL 10 DAY);
+-- SELECT DATE_ADD("2017-06-15 09:34:21", INTERVAL 15 MINUTE);
+-- SELECT DATE_ADD("2017-06-15 09:34:21", INTERVAL -3 HOUR);
+-- SELECT DATE_ADD(now(), INTERVAL -3 HOUR);
+-- SELECT DATE_ADD("2017-06-15", INTERVAL -2 MONTH);
+
+-- SELECT DATE_FORMAT("2017-06-15", "%Y");
+-- SELECT DATE_FORMAT("2017-06-15", "%M %d %Y");
+-- SELECT DATE_FORMAT("2017-06-15", "%W %M %e %Y");
+-- SELECT DATE_FORMAT(BirthDate, "%W %M %e %Y") FROM Employees;
+-- %a	Abbreviated weekday name (Sun to Sat)
+-- %b	Abbreviated month name (Jan to Dec)
+-- %c	Numeric month name (0 to 12)
+-- %D	Day of the month as a numeric value, followed by suffix (1st, 2nd, 3rd, ...)
+-- %d	Day of the month as a numeric value (01 to 31)
+-- %e	Day of the month as a numeric value (0 to 31)
+-- %f	Microseconds (000000 to 999999)
+-- %H	Hour (00 to 23)
+-- %h	Hour (00 to 12)
+-- %I	Hour (00 to 12)
+-- %i	Minutes (00 to 59)
+-- %j	Day of the year (001 to 366)
+-- %k	Hour (0 to 23)
+-- %l	Hour (1 to 12)
+-- %M	Month name in full (January to December)
+-- %m	Month name as a numeric value (00 to 12)
+-- %p	AM or PM
+-- %r	Time in 12 hour AM or PM format (hh:mm:ss AM/PM)
+-- %S	Seconds (00 to 59)
+-- %s	Seconds (00 to 59)
+-- %T	Time in 24 hour format (hh:mm:ss)
+-- %U	Week where Sunday is the first day of the week (00 to 53)
+-- %u	Week where Monday is the first day of the week (00 to 53)
+-- %V	Week where Sunday is the first day of the week (01 to 53). Used with %X
+-- %v	Week where Monday is the first day of the week (01 to 53). Used with %x
+-- %W	Weekday name in full (Sunday to Saturday)
+-- %w	Day of the week where Sunday=0 and Saturday=6
+-- %X	Year for the week where Sunday is the first day of the week. Used with %V
+-- %x	Year for the week where Monday is the first day of the week. Used with %v
+-- %Y	Year as a numeric, 4-digit value
+-- %y	Year as a numeric, 2-digit value
+
+-- SELECT DATE_SUB("2017-06-15", INTERVAL 10 DAY); -- less time,day
+-- SELECT DATE_SUB("2017-06-15 09:34:21", INTERVAL 15 MINUTE);
+-- SELECT DATE_SUB("2017-06-15 09:34:21", INTERVAL 3 HOUR);
+-- SELECT DATE_SUB("2017-06-15", INTERVAL -2 MONTH);
+-- MICROSECOND
+-- SECOND
+-- MINUTE
+-- HOUR
+-- DAY
+-- WEEK
+-- MONTH
+-- QUARTER
+-- YEAR
+-- SECOND_MICROSECOND
+-- MINUTE_MICROSECOND
+-- MINUTE_SECOND
+-- HOUR_MICROSECOND
+-- HOUR_SECOND
+-- HOUR_MINUTE
+-- DAY_MICROSECOND
+-- DAY_SECOND
+-- DAY_MINUTE
+-- DAY_HOUR
+-- YEAR_MONTH
+
+
+
+
