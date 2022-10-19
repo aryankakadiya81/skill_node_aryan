@@ -376,6 +376,8 @@
 -- select * from product_master order by description;
 
 -- source D:\ARYAN KAKADIYA\PROGRAMME\NODE_JS\MY SQL\data.sql
+
+
  
 -- select LEFT("aryan kakadiya", 6);
 -- select LEFT("aryan kakadiya", 7) as ExtractString;
@@ -431,8 +433,9 @@
 -- select ltrim(Orderno) as trimfun, ltrim(Productrate) from sales_order_details;
 -- select ltrim(Orderno) as trimfun, ltrim(Productrate) as trimfun1 from sales_order_details;
 
-
-
+-- alter table table_name add column_name datatype;
+-- alter table table_name drop column_name datatype;
+-- alter table table_name modify column_name datatype; 
 
 -- select * from client_master where name like '_a%';
 
