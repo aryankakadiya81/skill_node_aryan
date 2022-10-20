@@ -437,6 +437,97 @@
 -- alter table table_name drop column_name datatype;
 -- alter table table_name modify column_name datatype; 
 
+-- string function 
+
+-- /left/:-
+-- select  left(name,5) as name from client_master;
+
+-- /length/:-
+-- select length("name") as name;
+
+-- /Lower/:-
+-- select Lower("NAME");
+
+-- /Lpad/:-
+-- select lpad("SQL",6,"OOM");
+
+-- /LTRIM/:-
+-- select LTRIM("      sql op");
+
+-- /MID & SUBSTR & SUBSTRING/:-
+-- select mid("sql tutorial",5,3);
+
+-- /Repeat/:-
+-- select Repeat("sql",3);
+
+-- /Replace/:-
+-- select Replace("sql tutorial","sql","html");
+
+-- /Right/:-
+-- select Right("sql tutorial",4);
+
+-- /RPAD/:-
+-- select RPAD("sql",8,"ABC");
+
+-- /RTRIM/:-
+-- select RTRIM("sql     ") as name; 
+
+-- /STRCMP/:-
+-- select STRCMP("sql","sql");
+
+-- /TRIM/:-
+-- select TRIM("    sql     ") as name;
+
+-- /UCASE & UPPER/:-
+-- select UPPER("sql");
+
+-- /Maths Function/:-
+
+-- /ABS/:-
+-- SELECT ABS(-243.5);
+
+-- /AVG/:-
+-- SELECT AVG(sellprice) AS AveragePrice FROM product_master;
+
+-- /CEIL/:-
+-- SELECT CEIL(25.75);
+
+-- /COUNT/:-
+-- SELECT COUNT(clientno) AS NumberOfProducts FROM client_master;
+
+-- /DIV/:-
+-- SELECT 10 DIV 5;
+
+-- /FLOOR/:-
+-- SELECT FLOOR(25.75);
+
+-- /MAX/:-
+-- SELECT MAX(sellprice) AS LargestPrice FROM product_master;
+
+-- /MIN/:-
+-- SELECT min(sellprice) AS smallestPrice FROM product_master;
+
+-- /MOD/:-
+-- SELECT MOD(18, 4);
+
+-- /PI/:-
+-- select pi();
+
+-- /POW/:-
+-- SELECT POW(4, 2);
+
+-- /RAND/:-
+-- select rand();
+
+-- /ROUND/:-
+-- SELECT ROUND(135.375, 2);
+
+-- /SQRT/:-
+-- SELECT SQRT(64);
+
+-- /SUM/:-
+-- SELECT SUM(sellprice) AS TOTAL FROM product_master;
+
 -- select * from client_master where name like '_a%';
 
 -- select * from client_master where city like 'm%';
@@ -574,4 +665,26 @@
 
 
 
+
+
+-- SELECT DATEDIFF(now(),"2000-01-19");
+
+-- SELECT DATE_FORMAT(DATEDIFF("2022-01-19",curdate()), "%Y");
+ 
+-- select DATE_FORMAT (from_days(DATEDIFF(now(),'2004-04-19')),'%y %m %d %a') as age;
+
+-- CREATE TABLE students (
+-- Roll_No INT, 
+-- Name VARCHAR(10), 
+-- dob date);
+
+-- INSERT INTO students VALUES(1,'aryan','2004-04-19'); 
+-- INSERT INTO students VALUES(2,'neel','2000-09-05');
+-- INSERT INTO students VALUES(3,'kunj','2005-08-12');
+-- INSERT INTO students VALUES(4,'harsh','2003-07-14');
+-- select * from students;
+
+--  alter table students add column age varchar(50);
+
+-- update students set age = DATE_FORMAT(from_days(DATEDIFF(now(),dob)),'%y %m %d %a');
 
