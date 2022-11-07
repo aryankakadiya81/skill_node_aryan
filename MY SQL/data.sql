@@ -688,3 +688,4 @@
 
 -- update students set age = DATE_FORMAT(from_days(DATEDIFF(now(),dob)),'%y %m %d %a');
 
+CREATE DATABASE new;
