@@ -759,5 +759,33 @@
 
 -- select name, price,price*0.10 as discount,(price-price*0.10) as discount_amt from products where 120 <= price;
 
+-- inner join 
 
+-- select products.code,products.name,products.price,products.manufacturer,manufacturers.code,manufacturers.name
+-- from products
+-- inner join manufacturers
+-- on products.manufacturer = manufacturers.code;
 
+-- select *
+-- from products
+-- inner join manufacturers
+-- on products.manufacturer = manufacturers.code order by products.code asc;
+
+-- select products.code,products.name,products.price,products.manufacturer,manufacturers.code,manufacturers.name
+-- from products
+-- left join manufacturers
+-- on products.manufacturer = manufacturers.code;
+
+-- select *
+-- from products
+-- left join manufacturers
+-- on products.manufacturer = manufacturers.code order by products.code asc;
+
+-- select products.code,products.name,products.price,products.manufacturer,manufacturers.code,manufacturers.name
+-- from products
+-- right join manufacturers
+-- on products.manufacturer = manufacturers.code;
+
+-- select *
+-- from products
+-- cross join manufacturers;
