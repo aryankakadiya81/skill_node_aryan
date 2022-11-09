@@ -760,7 +760,6 @@
 -- select name, price,price*0.10 as discount,(price-price*0.10) as discount_amt from products where 120 <= price;
 
 -- inner join 
-
 -- select products.code,products.name,products.price,products.manufacturer,manufacturers.code,manufacturers.name
 -- from products
 -- inner join manufacturers
@@ -771,6 +770,7 @@
 -- inner join manufacturers
 -- on products.manufacturer = manufacturers.code order by products.code asc;
 
+-- left join
 -- select products.code,products.name,products.price,products.manufacturer,manufacturers.code,manufacturers.name
 -- from products
 -- left join manufacturers
@@ -781,11 +781,91 @@
 -- left join manufacturers
 -- on products.manufacturer = manufacturers.code order by products.code asc;
 
+-- right join
 -- select products.code,products.name,products.price,products.manufacturer,manufacturers.code,manufacturers.name
 -- from products
 -- right join manufacturers
 -- on products.manufacturer = manufacturers.code;
 
+-- cross join
 -- select *
 -- from products
 -- cross join manufacturers;
+
+-- select a.name, a.price, b.name
+-- from products a, manufacturers b
+-- where a.manufacturer = b.code
+-- and a.name = 'moniter';
+
+-- select sum(a.price), b.name
+-- from manufacturers b, products a
+-- where b.code = a.manufacturer
+-- group by b.name
+-- having b.name = 'sony';
+
+-- create view vw_sum_price as
+-- select sum(a.price), b.name
+-- from manufacturers b, products a
+-- where b.code = a.manufacturer
+-- group by b.name;
+
+-- select * from vw_sum_price;
+
+-- select * from manufacturers;
+
+-- select * from products;
+
+-- old query from sir_file_1
+
+-- 10
+-- select *
+-- from products
+-- inner join manufacturers
+-- on products.manufacturer = manufacturers.code;
+
+-- 11
+-- select products.name, products.price, manufacturers.name
+-- from products
+-- inner join manufacturers
+-- on products.manufacturer = manufacturers.code;
+
+-- 12
+-- select avg(a.price), b.code
+-- from manufacturers b, products a
+-- where b.code = a.manufacturer
+-- group by b.name;
+
+-- 13
+-- select avg(a.price), b.name
+-- from manufacturers b, products a
+-- where b.code = a.manufacturer
+-- group by b.code;
+
+-- select avg(a.price), b.name
+-- from manufacturers b, products a
+-- where b.code = a.manufacturer
+-- group by b.name;
+
+-- 14
+-- select avg(a.price), b.name
+-- from manufacturers b, products a
+-- where b.code = a.manufacturer
+-- group by b.name
+-- having 150 <= avg(a.price);
+
+-- 15
+-- select price, name from products order by price limit 1;
+
+-- 16
+-- select max(a.price), b.name
+-- from manufacturers b, products a
+-- where b.code = a.manufacturer
+-- group by b.name 
+-- order by max(a.price) desc
+-- limit 1;
+-- (subquery of 16)
+-- select a.price, b.name
+-- from manufacturers b, products a
+-- where b.code = a.manufacturer
+-- group by b.name 
+-- having max(price) = (select max(price) from products);
