@@ -852,3 +852,26 @@
 -- select * from sales_order;        
 -- select * from sales_order_details;
 -- select * from salesman_master;
+
+-- 1.a
+-- select product_master.productno,product_master.description,sum(sales_order_details.Qtyordered)
+-- from sales_order_details
+-- inner join product_master
+-- on sales_order_details.productno = product_master.productno
+-- group by product_master.productno;
+
+-- 1.b
+-- select product_master.productno,product_master.description,sum(sales_order_details.Qtydisp)
+-- from sales_order_details
+-- inner join product_master
+-- on sales_order_details.productno = product_master.productno
+-- group by product_master.productno;
+
+-- 1.c
+-- select client_master.clientno,client_master.name,sum(sales_order_details.Productrate),sales_order.Orderno,sales_order_details.Qtydisp,avg(sales_order_details.Qtydisp)
+-- from sales_order
+-- inner join sales_order_details
+-- inner join client_master
+-- on sales_order.Orderno = sales_order_details.Orderno
+-- and sales_order.clientno = client_master.clientno
+-- group by client_master.clientno;
