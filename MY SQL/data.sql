@@ -8,6 +8,8 @@
 -- USE skilldemo;
 -- show tables;
 -- create table tablename(col datatype,.,.,.,.)
+-- \! cls (clear screen)
+-- source D:\ARYAN KAKADIYA\PROGRAMME\NODE_JS\MY SQL\data.sql
 
 -- CREATE TABLE students (
 -- Roll_No INT, 
@@ -351,10 +353,6 @@
 -- select * from salesman_master order by salesmanname desc;
 
 -- select * from product_master order by description;
-
--- source D:\ARYAN KAKADIYA\PROGRAMME\NODE_JS\MY SQL\data.sql
-
-
  
 -- select LEFT("aryan kakadiya", 6);
 -- select LEFT("aryan kakadiya", 7) as ExtractString;
@@ -847,6 +845,7 @@
 -- group by b.name 
 -- having max(price) = (select max(price) from products);
 
+-- --------------------------------------------------------------------
 -- select * from client_master;
 -- select * from product_master;      
 -- select * from sales_order;        
@@ -908,3 +907,57 @@
 -- where DATE_FORMAT(sales_order.OrderDate,"%m") = DATE_FORMAT(sales_order.Delydate,"%m");
 
 -- 2.c
+-- select product_master.productno,product_master.description, sum(sales_order_details.Qtyordered)
+-- from product_master
+-- inner join sales_order_details
+-- on sales_order_details.productno = product_master.productno
+-- group by product_master.productno
+-- order by sum(sales_order_details.Qtyordered) desc limit 1;
+
+-- 2.d
+-- select client_master.name, client_master.clientno, sales_order_details.Qtyordered
+-- from product_master
+-- inner join sales_order_details
+-- inner join sales_order
+-- inner join client_master
+-- on sales_order_details.productno = product_master.productno
+-- and sales_order.Orderno = sales_order_details.Orderno
+-- and client_master.clientno = sales_order.clientno
+-- where product_master.description = '540 hdd';
+
+-- 2.e
+-- select client_master.name, client_master.clientno, sales_order_details.Qtyordered
+-- from product_master
+-- inner join sales_order_details
+-- inner join sales_order
+-- inner join client_master
+-- on sales_order_details.productno = product_master.productno
+-- and sales_order.Orderno = sales_order_details.Orderno
+-- and client_master.clientno = sales_order.clientno
+-- where sales_order_details.Qtyordered < 5 
+-- and product_master.description = '1.44floppies'
+-- group by client_master.name;
+
+-- 2.f
+-- select client_master.name, client_master.clientno, product_master.description, sales_order_details.Qtyordered
+-- from product_master
+-- inner join sales_order_details
+-- inner join sales_order
+-- inner join client_master
+-- on sales_order_details.productno = product_master.productno
+-- and sales_order.Orderno = sales_order_details.Orderno
+-- and client_master.clientno = sales_order.clientno
+-- where client_master.name = 'ivan' 
+-- or client_master.name = 'ravi';
+
+-- 2.g
+-- select client_master.clientno, client_master.name, product_master.description, sales_order_details.Qtyordered
+-- from product_master
+-- inner join sales_order_details
+-- inner join sales_order
+-- inner join client_master
+-- on sales_order_details.productno = product_master.productno
+-- and sales_order.Orderno = sales_order_details.Orderno
+-- and client_master.clientno = sales_order.clientno
+-- where client_master.clientno = 'C00001' 
+-- or client_master.clientno = 'C00002';
