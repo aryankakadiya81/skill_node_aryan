@@ -868,10 +868,43 @@
 -- group by product_master.productno;
 
 -- 1.c
--- select client_master.clientno,client_master.name,sum(sales_order_details.Productrate),sales_order.Orderno,sales_order_details.Qtydisp,avg(sales_order_details.Qtydisp)
--- from sales_order
--- inner join sales_order_details
+-- select client_master.clientno,client_master.name,avg(sales_order_details.Qtydisp)
+-- from sales_order_details
+-- inner join sales_order
 -- inner join client_master
 -- on sales_order.Orderno = sales_order_details.Orderno
 -- and sales_order.clientno = client_master.clientno
--- group by client_master.clientno;
+-- group by client_master.clientno, client_master.name
+-- having max(sales_order_details.Qtyordered * sales_order_details.Productrate) > 15000;
+
+-- 1.d
+-- select sum(sales_order_details.Qtyordered),sales_order.OrderDate
+-- from sales_order_details
+-- inner join sales_order
+-- on sales_order_details.Orderno = sales_order.Orderno
+-- group by sales_order.OrderDate
+-- having DATE_FORMAT(sales_order.OrderDate,"%m") = 6;
+
+-- 2.a
+-- select client_master.name, client_master.clientno, product_master.description 
+-- from product_master
+-- inner join sales_order_details
+-- inner join sales_order
+-- inner join client_master
+-- on sales_order_details.productno = product_master.productno
+-- and sales_order.Orderno = sales_order_details.Orderno
+-- and client_master.clientno = sales_order.clientno
+-- where client_master.name = 'Ivan';
+
+-- 2.b
+-- select sales_order_details.Orderno, sales_order_details.productno, product_master.description, sales_order.OrderDate, sales_order.Delydate
+-- from product_master
+-- inner join sales_order_details
+-- inner join sales_order
+-- inner join client_master
+-- on sales_order_details.productno = product_master.productno
+-- and sales_order.Orderno = sales_order_details.Orderno
+-- and client_master.clientno = sales_order.clientno
+-- where DATE_FORMAT(sales_order.OrderDate,"%m") = DATE_FORMAT(sales_order.Delydate,"%m");
+
+-- 2.c
