@@ -961,3 +961,42 @@
 -- and client_master.clientno = sales_order.clientno
 -- where client_master.clientno = 'C00001' 
 -- or client_master.clientno = 'C00002';
+
+-- select * from product_master;      
+-- select * from client_master;
+-- select * from sales_order;        
+-- select * from sales_order_details;
+-- select * from salesman_master;
+
+-- 3.a
+-- select productno, description 
+-- from product_master 
+-- where productno 
+-- not in (select productno from sales_order_details); 
+
+-- 3.b
+-- select Clientno,Name,Address1,Address2,city,pincode 
+-- from client_master
+-- where clientno = (select clientno from sales_order where orderno = 'O19001');
+
+-- 3.c
+-- select name
+-- from client_master
+-- where clientno 
+-- in (select clientno from sales_order where OrderDate < '2004-05-01');
+
+-- 3.d
+-- select clientno,name
+-- from client_master
+-- where clientno 
+-- in (select clientno from sales_order where orderno in 
+-- (select orderno from sales_order_details where productno in 
+-- (Select productno from product_master where description = 'mouse')));
+
+-- 3.e
+-- select clientno,name
+-- from client_master
+-- where clientno 
+-- in (select clientno from sales_order where orderno in 
+-- (select orderno from sales_order_details where (Qtyordered * Productrate) >= 10000));
+
