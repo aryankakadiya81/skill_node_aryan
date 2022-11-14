@@ -93,13 +93,14 @@
 // var i = 1;
 // do
 // {
+//     i++;
 //     var j = 1;
 //     {
-//         console.log(i);
 //         j++;
+//         console.log(i);
 //     }
 //     while(j <= 5);
-//     i++;
+    
 // }
 // while(i <= 5);
 
