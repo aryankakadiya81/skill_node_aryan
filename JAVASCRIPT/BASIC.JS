@@ -59,6 +59,7 @@
 // =================================================
 
 // console.log("programme 6");
+// var a;
 // for(a=1 ; a<5 ; a++)
 // {
 //     console.log(a);
@@ -88,19 +89,119 @@
 
 // =================================================
 
-// console.log("programme 9");
-// wrong programme
-// var i = 1;
-// do
+//  console.log("programme 9");
+//  var i = 1;
+//  do
+//  {
+//      i++;
+//      var j = 1;
+//      do
+//      {
+//          j++;
+//          console.log(i);
+//      }
+//      while(j <= i);  
+//  }
+//  while(i <= 5);
+
+// =================================================
+
+// console.log("programme 10");
+
+// var a,b;
+// for(a=1 ; a<5 ; a++)
 // {
-//     i++;
-//     var j = 1;
+//     for(b=1 ; b<a ; b++)
 //     {
-//         j++;
-//         console.log(i);
+//         console.log(a);
 //     }
-//     while(j <= 5);
-    
 // }
-// while(i <= 5);
+
+// =================================================
+
+// console.log("programme 11");
+// var a=1;
+// while(a <= 5)
+// {
+//     a++;
+//     var b=1;
+//     while(b <= a)
+//     {
+//         console.log(a);
+//         b++;
+//     }
+// }
+
+// operators
+
+// console.log(10+20);
+// console.log(10+"20");
+// console.log(10+'20');
+// console.log(10 + +'20');
+// console.log(10+ +'20');
+
+// console.log(10+ +'20' + 20);
+// console.log(10 * '20');
+// console.log(10 * 20);
+// console.log(10 / '20');
+// console.log(10 / 20);
+
+// console.log(true+false);
+// console.log(true+true);
+// console.log(true+1);
+// console.log(true+10+20/5*false);
+// console.log(true/false);
+// console.log(20*5/false);
+// console.log(10+20/5*4-false);
+// console.log(10+20/5*4-1);
+// console.log(10+20/5*4-true);
+
+// assignment operator =
+// comparision ==
+// strictly comparision ===
+
+// console.log(10==10);
+// console.log(10=='10');
+// console.log(10==='10');
+// console.log(10===10);
+// console.log(10=='ten');
+
+// console.log(0.1+0.2);
+// console.log(0.1+0.2 == 0.3);
+// console.log(0.2+0.2 == 0.4);
+// console.log(0.2+0.2);
+// console.log(0.1+0.3 == 0.4);
+
+// console.log(typeof "skill");
+// console.log(typeof 10);
+// console.log(typeof 10.1);
+// console.log(typeof true);
+// console.log(typeof undefined);
+// console.log(typeof NaN);
+// console.log(typeof null);
+// console.log(typeof {});
+// console.log(typeof []);
+// console.log(typeof 100n);
+// console.log(typeof function(){});
+// console.log(typeof Symbol('A'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
