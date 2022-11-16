@@ -1,3 +1,4 @@
+// 14-11-2022 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // console.log("programme 1");
 // console.log("hello");
 
@@ -132,6 +133,7 @@
 //     }
 // }
 
+// 15-11-2022 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // operators
 
 // console.log(10+20);
@@ -157,8 +159,8 @@
 // console.log(10+20/5*4-true);
 
 // assignment operator =
-// comparision ==
-// strictly comparision ===
+// comparision == (check only data)
+// strictly comparision === (check data and datatype both)
 
 // console.log(10==10);
 // console.log(10=='10');
@@ -185,21 +187,113 @@
 // console.log(typeof function(){});
 // console.log(typeof Symbol('A'));
 
+// 16-11-2022 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// operator(and,or,xor, + + ),string,variable(var,let,const),undefined,null,NaN
 
+// console.log("0" == false);//true
+// console.log(false == "0");//true
+// console.log(false === "0");//false
 
+// var a=1,b=2;
+// // console.log(a ++ b);//error
+// console.log(a + + b);// a + + b = a+(+ b) = a+b = 1+2 = 3
 
+// 'and' & 'or' operators
+// var a=2,b=3,c;
+// console.log(a++);//2
+// console.log(a++);//3
+// console.log(++a);//5
+// c = --a && b++; // if first condition value is 1 after it is continue
+// c = --a || b++; // if first condition value is 0 after it is continue
+// console.log(a,"-",b,"-",c);
 
+// xor(^) operator-> exclusive or ^ 
+// console.log(1^1);//0
+// console.log(1^0);//1
+// console.log(0^1);//1
+// console.log(0^0);//0
 
+// console.log(1^0^1);//0
+// console.log(0^1^0);//1
+// console.log(0^0^0);//0
+// console.log(1^1^1);//1
 
+// string
+// var a=10,b=20;
+// var str1 = " hello " + a + " aryan " + b +" str-1";
+// var str2 = ' hello ' + b + ' aryan ' + a +' str-2 ';
+// var str3 = `hello ${a} aryan ${b}  ${"str-3"}`;
+// console.log(str1);
+// console.log(str2);
+// console.log(str3);
 
+// variable
+// there are three types of variable declaration > var
+//                                               > let
+//                                               > const
+// var...........
+// var a = 10;
+// console.log(a);//10
 
+// console.log(a);//undefined
+// var a=10;
 
+// var a;
+// console.log(a);//undefined
 
+// let.................
+// let a = 10;
+// console.log(a);//10
 
+// console.log(a);//error :-> Cannot access 'a' before initialization
+// let a=10;
 
+// let a;
+// console.log(a);//undefined
 
+// let a=10;
+// console.log(a + '10');//1010
+// console.log(typeof (a + '10'));//string
+// console.log(a + true);//11
+// console.log(typeof(a + true));//number
 
+// let a=10;
+// let b="10"+"a";
+// console.log(b);//10a
 
+// const.................
+
+// const a=10;
+// a=20;
+// console.log(a);//error :-> Assignment to constant variable
+
+// const a=10;
+// a=a+10;
+// console.log(a);//error :-> Assignment to constant variable
+
+// const a=10;
+// a+=10;
+// console.log(a);//error :-> Assignment to constant variable
+
+// console.log(a);//error :-> Cannot access 'a' before initialization
+// const a=10;
+
+// console.log(a);
+// const a;//value is mandatory for const variable declaration
+
+// undefined, null, NaN
+
+// console.log(undefined == undefined);//true
+// console.log(undefined === undefined);//true
+// console.log(null == null);//true
+// console.log(null === null);//true
+// console.log(NaN == NaN);//false everytime NaN give diffrent value
+// console.log(NaN === NaN);//false everytime NaN give diffrent value
+
+// console.log(null == undefined);//true
+// console.log(null === undefined);//false
+// console.log(null === NaN);//false
+// console.log(null == NaN);//false
 
 
 
