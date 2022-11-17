@@ -295,7 +295,69 @@
 // console.log(null === NaN);//false
 // console.log(null == NaN);//false
 
+// 17/11/2022+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// undefined,NaN,null,let,var
+// console.log(typeof 0);
+// console.log(typeof null);
+// console.log(typeof undefined);
+// console.log(typeof NaN);
 
+// console.log(10*"s"); //NaN
+
+// console.log("s"*10); //NaN
+
+// undefined   NaN     null
+
+
+//  console.log(null == 0)//false
+//  console.log(undefined == 0)//false
+//  console.log(NaN == 0)//false
+
+// undefined   NaN     nulls
+//  console.log(undefined == null);//true
+//  console.log(undefined === null);//false
+//  console.log(undefined == NaN);//false
+
+//  console.log(NaN == null);//false
+//  console.log(NaN === null);//false
+
+/*
+            var                                             let
+
+    var keword introduced in "ES1"                let keyword introduced in "ES6"
+
+    var keyword allows the duplicate              let keyword wont allows the duplicate
+    variables                                     variables
+
+    variable hoisting issue raised                we can overcome variable hoisting
+    with var keywors                              with let keyword
+
+    scope rule break by var keyword               let keyword obeys the scope rule
+
+    global polluting issue raised                 we can overcome global polluting issue
+    because of var keyword                        by using let keuword
+
+*/
+
+
+// var a=10;
+// console.log(a);
+// var a=20
+// console.log(a);
+
+// let a=10;
+// console.log(a);
+// let a=20
+// console.log(a);
+
+// let a=10;
+// {
+//     let a=100;        
+// }
+// console.log(a);
+
+
+//let findSimpleInterest; //camel case
 
 
 
