@@ -188,6 +188,7 @@
 // console.log(typeof Symbol('A'));
 
 // 16-11-2022 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 // operator(and,or,xor, + + ),string,variable(var,let,const),undefined,null,NaN
 
 // console.log("0" == false);//true
@@ -297,10 +298,11 @@
 
 // 17/11/2022+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // undefined,NaN,null,let,var
-// console.log(typeof 0);
-// console.log(typeof null);
-// console.log(typeof undefined);
-// console.log(typeof NaN);
+
+// console.log(typeof 0);//number         
+// console.log(typeof null);//object
+// console.log(typeof undefined);//undefined
+// console.log(typeof NaN);//number
 
 // console.log(10*"s"); //NaN
 
@@ -308,10 +310,15 @@
 
 // undefined   NaN     null
 
+// console.log(0 == 0)//true
+// console.log(null == 0)//false
+// console.log(undefined == 0)//false
+// console.log(NaN == 0)//false
 
-//  console.log(null == 0)//false
-//  console.log(undefined == 0)//false
-//  console.log(NaN == 0)//false
+//  console.log(0 === 0)//true
+// console.log(null === 0)//false
+// console.log(undefined === 0)//false
+// console.log(NaN === 0)//false
 
 // undefined   NaN     nulls
 //  console.log(undefined == null);//true
@@ -341,23 +348,36 @@
 
 
 // var a=10;
-// console.log(a);
+// console.log(a);//10
 // var a=20
-// console.log(a);
+// console.log(a);//20
 
 // let a=10;
-// console.log(a);
+// console.log(a);//error :-> Cannot redeclare block-scoped variable 'a'
 // let a=20
-// console.log(a);
+// console.log(a);//error :-> Cannot redeclare block-scoped variable 'a'
+
+
+// let a=10;
+// {
+//     let a=100;        
+//     console.log(a);//100
+// }
+// console.log(a);//10
 
 // let a=10;
 // {
 //     let a=100;        
 // }
-// console.log(a);
+// console.log(a);//10
 
+// let a=10;
+// {
+//     let a=100;        
+//     console.log(a);//100
+// }
 
-//let findSimpleInterest; //camel case
+// let findSimpleInterest;//camel case
 
 
 
