@@ -381,78 +381,168 @@
 
 // 19/11/2022+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// Array
+// Array,push,pop,shift,unshift,splice
 
 // let arr=[10,11,12,13,14,15,16,17];                                
-// console.log(typeof arr);
-// console.log(arr);
-// console.log(arr[0]);
-// console.log(arr[5]);
-// console.log(arr["10"]);
-// console.log(arr[3.1]);
+// console.log(typeof arr);//object
+// console.log(arr);//[10,11,12,13,14,15,16,17]
+// console.log(arr[0]);//10
+// console.log(arr[5]);//15
+// console.log(arr["10"]);//undefined
+// console.log(arr[3.1]);//undefined
 
 // let arr=["ten",11,"twelve",13,14,"15",16,"17"];                                
-// console.log(arr);
+// console.log(arr);//["ten",11,"twelve",13,14,"15",16,"17"]
 // The length property of an Array object represents the number of elements in that array
-// console.log(arr.length);
+// console.log(arr.length);//8
 // arr.length = 10;
-// console.log(arr);
-// console.log(arr.length);
+// console.log(arr);//[ 'ten', 11, 'twelve', 13, 14, '15', 16, '17', <2 empty items> ]
+// console.log(arr.length);//10
 // arr[9]=undefined;
 // arr[5]=undefined;
 // arr[5]=20;
 // arr[3.1]=3.1;
 // arr["A"]="a";
-// console.log(arr);
-// console.log(arr.length);
-// console.log(arr[9]);
+// console.log(arr);//['ten' ,11,'twelve',13,14,20,16,'17',<1 empty item>, undefined,'3.1': 3.1,A: 'a']
+// console.log(arr.length);//10
+// console.log(arr[9]);//undefined
+// console.log(arr[9]);//undefined
+
+// let arr=["ten",11,"twelve",13,14,"15",16,"17"];                                
 // arr.length=100;
-// console.log(arr);
+// console.log(arr);//[ 'ten', 11, 'twelve', 13, 14, '15', 16, '17', <92 empty items> ]
 // arr[50]=50;
-// console.log(arr.length);
+// console.log(arr.length);//100
 // arr['50']="fifty";
-// console.log(arr.length);
+// console.log(arr);//['ten',11,'twelve',13,14,'15',16,'17',<42 empty items>,'fifty',<49 empty items>]
+// console.log(arr.length);//100
 
 
 // let arr1={"A":"a","B":"b"}
-// let arr11=["A":"a","B":"b"]
-// console.log(arr1);
-
-// console.log(arr_new[-2])
-// arr_new.push(18);
-// arr_new.pop();
-// arr_new.pop();
-// arr_new.pop();
-// console.log(arr_new)
-// arr_new.shift();
-// arr_new.shift();
-// arr_new.shift();
-// arr_new.unshift(9);
-// console.log(arr_new)
-// console.log(arr_new)
-// console.log(arr_new)
-// arr_new.splice(5);
-// arr_new.splice(5,1);
-// arr_new.splice(-4,2);
-// arr_new.splice(-4,-2);
-// arr_new.splice(4,-2);
-// arr_new.splice(-3);
-// arr_new.splice(0,2,30,31);
-// arr_new.splice(0,2,30,31,32,33);
-// arr_new.splice(0,arr_new.length,30,31,32,33);
-// arr_new.splice(0,0,30,31,32,33);
-// arr_new.splice(5,30,31,32,33);
-// arr_new.splice(0,5,30,31,32,33);
-// arr_new.splice(5,0,30,31,32,33);
-
-
-// console.log(arr_new.splice(2));
+// let arr11=["A":"a","B":"b"]// error :->  ',' expected.
+// console.log(arr1);//{ A: 'a', B: 'b' }
+// console.log(arr1.A)//a
+// console.log(arr1.B)//b
 
 // let arr_new=[10,11,12,13,14,15,16,17,18,19,20];                                
-// console.log(arr_new.splice(3));
-// console.log(arr_new.splice(3,3));
-// console.log(arr_new.splice(3,100,21,22,23));
+// console.log(arr_new[-2]);//undefined
 
+// push(last insert)
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.push(28);
+// console.log(arr_new)//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 28 ]
+
+// pop(last delete)
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+// arr_new.pop();
+// console.log(arr_new)//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 ]
+// arr_new.pop();
+// console.log(arr_new)//[ 10, 11, 12, 13, 14, 15, 16, 17, 18 ]
+
+// shift(first delete)
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.shift();
+// console.log(arr_new)//[ 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.shift();
+// console.log(arr_new)//[ 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.shift();
+// console.log(arr_new)//[ 13, 14, 15, 16, 17, 18, 19, 20 ]
+
+// unshift(first add)
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.unshift(9);
+// console.log(arr_new);//[ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.unshift(1,2,3,4,5,6,7,8);
+// console.log(arr_new);//[ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+
+// splice(start, deleteCount) <- syntax_of splice
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(5);//delete element 5th(15 as per array position) to all
+// console.log(arr_new);//[ 10, 11, 12, 13, 14 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(5,1);//delete element 5th(15 as per array position) only one
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 16, 17, 18, 19, 20 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(-4,2);//delete element last 4th(17 as per negative position) to 2 
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 19, 20]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(-4,-2);//same output of arr_new because delete count naver in nagative number 
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(4,-2);//same output of arr_new because delete count naver in nagative number
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(-3);//delete element last 3rd(18 as per negative position) to all
+// console.log(arr_new);
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(0,2,30,31);//delete element 0(10 as per negative position) to 2 and add at first two element 30,31
+// console.log(arr_new);//[ 30, 31, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(0,2,30,31,32,33);////delete element 0(10 as per negative position) to 2 and add at first four element 30,31,32,33
+// console.log(arr_new);//[ 30, 31, 32, 33, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// console.log(arr_new.length);//11
+// arr_new.splice(0,arr_new.length,30,31,32,33);//delete all element and add four new element at first 30,31,32,33
+// console.log(arr_new);//[ 30, 31, 32, 33 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(0,0,30,31,32,33);
+// console.log(arr_new);//[ 30, 31, 32, 33, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(5,30,31,32,33);//add element at 5th position
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 31, 32, 33]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(0,5,30,31,32,33);
+// console.log(arr_new);//[ 30, 31, 32, 33, 15, 16, 17, 18, 19, 20 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// arr_new.splice(5,0,30,31,32,33);//add element from 5th position 
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 30, 31, 32, 33, 15, 16, 17, 18, 19, 20 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];   
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// console.log(arr_new.splice(2));//[ 12, 13, 14, 15, 16, 17, 18, 19, 20 ]//after_splice_output
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// console.log(arr_new.splice(3));//[ 13, 14, 15, 16, 17, 18, 19, 20 ]
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// console.log(arr_new.splice(3,3));//[ 13, 14, 15 ]//deleted element
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];
+// console.log(arr_new);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// console.log(arr_new.splice(3,100,21,22,23));//[ 13, 14, 15, 16, 17, 18, 19, 20 ]//deleted element
+// console.log(arr_new);//[ 10, 11, 12, 21, 22, 23 ]//after splice function apply
 
 
 
