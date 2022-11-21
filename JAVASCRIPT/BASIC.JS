@@ -544,6 +544,29 @@
 // console.log(arr_new.splice(3,100,21,22,23));//[ 13, 14, 15, 16, 17, 18, 19, 20 ]//deleted element
 // console.log(arr_new);//[ 10, 11, 12, 21, 22, 23 ]//after splice function apply
 
+// 21-11-2022
+
+// slice,at,join
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];                                
+
+// arr_new.slice(2);
+// console.log(arr_new.slice(3));
+// console.log(arr_new.slice(3,12));
+// console.log(arr_new.slice(-3,2)); //[]
+// console.log(arr_new.slice(-3,-5));
+// console.log(arr_new.slice(-5,-3));
+// let new_arr = arr_new.slice();
+// console.log(new_arr);
+
+// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];                                
+// console.log(arr_new.at(4));
+
+// console.log(arr_new.join());
+// console.log(arr_new.join(""));
+// console.log(arr_new.join("-"));
+// console.log(typeof arr_new.join());
+
 
 
 
