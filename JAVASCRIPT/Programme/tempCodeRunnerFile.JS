@@ -1,2 +1,3 @@
-console.log(arr_new.slice(-3,2)); //[]
-// console.log(arr_new.slice(-3,-5));//[]
+f_1(null,null,null); //null null null
+// f_1(null,"  ",null); //null    null
+// f_1(null,undefined,null); //null undefined null

@@ -544,7 +544,7 @@
 // console.log(arr_new.splice(3,100,21,22,23));//[ 13, 14, 15, 16, 17, 18, 19, 20 ]//deleted element
 // console.log(arr_new);//[ 10, 11, 12, 21, 22, 23 ]//after splice function apply
 
-// 21-11-2022
+// 21-11-2022 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // slice,at,join
 
@@ -558,25 +558,97 @@
 // console.log(arr_new.slice(-3,-5));//[]
 // console.log(arr_new.slice(-5,-3));//[ 16, 17 ]
 // let new_arr = arr_new.slice();
-// console.log(new_arr);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]// 
+// console.log(new_arr);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
 
 // at()
 // let arr_new=[10,11,12,13,14,15,16,17,18,19,20];                                
-// console.log(arr_new.at(4));//14
-// console.log(arr_new.at(-2));//19
-// console.log(arr_new.at(-4));//17
+// console.log(arr_new.at(4)); //14
+// console.log(arr_new.at(-2)); //19
+// console.log(arr_new.at(-4)); //17
 
 // join()
 // let arr_new = [10,11,12,13,14,15,16,17,18,19,20];                                
-// console.log(arr_new.join());//10,11,12,13,14,15,16,17,18,19,20
-// console.log(arr_new.join(""));//1011121314151617181920
-// console.log(arr_new.join("-"));//10-11-12-13-14-15-16-17-18-19-20
-// console.log(typeof arr_new.join());//string
+// console.log(arr_new.join()); //10,11,12,13,14,15,16,17,18,19,20
+// console.log(arr_new.join("")); //1011121314151617181920
+// console.log(arr_new.join("-")); //10-11-12-13-14-15-16-17-18-19-20
+// console.log(typeof arr_new.join()); //string
 
 
+// 22-11-2022
+// FUNCTION
+
+// 1...............................................................
+// function f_1(a1,a2,a3)
+// {
+//     console.log(a1,a2,a3);
+// }
+// f_1("aryan","utsav","sankalp"); //aryan utsav sankalp
+// f_1("react","node"); // react node undefined
+// f_1("kalrav"); // kalrav undefined undefined
+// f_1(); //undefined undefined undefined
+// f_1(undefined ,undefined ,undefined);//undefined undefined undefined
+// f_1(undefined,"sankalp"); //undefined sankalp undefined
+// f_1(null,null,null); //null null null
+// f_1(null,"  ",null); //null    null
+// f_1(null,undefined,null); //null undefined null
+// f_1(null, {}, []); //null {} []
+
+// 2...............................................................
+
+// function fun_0()
+// {
+//     console.log("inside fun_0()");
+//     return "hello";
+// }
+// function fun_1()
+// {
+//     console.log("inside fun_1()");
+//     return fun_0();
+// }
+// function fun_2()
+// {
+//     console.log("inside fun_2()");
+//     return fun_1();
+// }
+
+// console.log(fun_2);//[Function: fun_2]
+// console.log(fun_2());//inside fun_2()
+//                         // inside fun_1()
+//                         // inside fun_0()
+//                         // hello
 
 
+// 3...............................................................
 
+// function F_1()
+// {
+//     return "hello";
+// }
+// function F_2()
+// {
+//     return F_1;
+// }
+// console.log(F_2());//[Function: F_1]
+// console.log(F_2()());//hello
+
+// 4.......................................................
+
+// function fun_one(arg1, arg2, arg3) 
+// {
+//     // console.log(arg1(), arg2(), arg3());
+//     console.log(arg1, arg2, arg3);
+// }
+// function fun_two() {
+//       return "Hello_1";
+// }
+// function fun_three() {
+//       return "Hello_2";
+// }
+// function fun_four() {
+//       return "Hello_3";
+// }
+// // fun_one(fun_two, fun_three, fun_four); //Hello_1 Hello_2 Hello_3
+//  fun_one(fun_two(), fun_three(), fun_four()); ////Hello_1 Hello_2 Hello_3
 
 
 
