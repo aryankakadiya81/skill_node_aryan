@@ -548,24 +548,30 @@
 
 // slice,at,join
 
-// let arr_new=[10,11,12,13,14,15,16,17,18,19,20];                                
-
-// arr_new.slice(2);
-// console.log(arr_new.slice(3));
-// console.log(arr_new.slice(3,12));
+// slice()
+// let arr_new = [10,11,12,13,14,15,16,17,18,19,20];                                
+// let a = arr_new.slice(2);
+// console.log(a);// [ 12, 13, 14, 15, 16, 17, 18, 19, 20 ]
+// console.log(arr_new.slice(3)); //[ 13, 14, 15, 16, 17, 18, 19, 20 ]
+// console.log(arr_new.slice(3,12)); //[ 13, 14, 15, 16, 17, 18, 19, 20 ]
 // console.log(arr_new.slice(-3,2)); //[]
-// console.log(arr_new.slice(-3,-5));
-// console.log(arr_new.slice(-5,-3));
+// console.log(arr_new.slice(-3,-5));//[]
+// console.log(arr_new.slice(-5,-3));//[ 16, 17 ]
 // let new_arr = arr_new.slice();
-// console.log(new_arr);
+// console.log(new_arr);//[ 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 ]// 
 
+// at()
 // let arr_new=[10,11,12,13,14,15,16,17,18,19,20];                                
-// console.log(arr_new.at(4));
+// console.log(arr_new.at(4));//14
+// console.log(arr_new.at(-2));//19
+// console.log(arr_new.at(-4));//17
 
-// console.log(arr_new.join());
-// console.log(arr_new.join(""));
-// console.log(arr_new.join("-"));
-// console.log(typeof arr_new.join());
+// join()
+// let arr_new = [10,11,12,13,14,15,16,17,18,19,20];                                
+// console.log(arr_new.join());//10,11,12,13,14,15,16,17,18,19,20
+// console.log(arr_new.join(""));//1011121314151617181920
+// console.log(arr_new.join("-"));//10-11-12-13-14-15-16-17-18-19-20
+// console.log(typeof arr_new.join());//string
 
 
 
