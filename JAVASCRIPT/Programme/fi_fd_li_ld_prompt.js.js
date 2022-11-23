@@ -1,3 +1,5 @@
+// first insert and delete, 
+// last insert and delete
 let prompt = require("prompt-sync")();
 let arr = [];
 
