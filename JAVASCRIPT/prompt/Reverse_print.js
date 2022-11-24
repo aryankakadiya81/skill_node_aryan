@@ -1,4 +1,8 @@
-// reverse print // simple
+// 1. Write a JS function that reverse a number. 
+//    Example x = 32243;
+//    Expected Output : 34223
+
+// reverse print // using name_function
 // let prompt = require("prompt-sync")();
 
 // function rev_num()
@@ -15,7 +19,7 @@
 // }
 
 
-// rev_num(); // anonymous
+// rev_num(); // using anonymous
 // let prompt = require("prompt-sync")();
 
 // rev_num =()=>{

@@ -574,7 +574,7 @@
 // console.log(typeof arr_new.join()); //string
 
 
-// 22-11-2022
+// 22-11-2022 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // FUNCTION
 
 // 1...............................................................
@@ -651,7 +651,139 @@
 //  fun_one(fun_two(), fun_three(), fun_four()); ////Hello_1 Hello_2 Hello_3
 
 
-//23-11-2022
+// 23-11-2022 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// anonymous
+
+// Function => anonymous
+// console.log(() => {}) //[Function (anonymous)]
+
+// let fun_1 = () =>{
+//     return "hello";
+// }
+// console.log(fun_1()) //hello
+
+// single line function
+// let fun_1 = (str) => `world ${str}` // single line function
+// let string = "hello";
+// console.log(fun_1(string)) //world hello 
+
+// function chaining
+// let fun_1 = () =>{
+//     return () =>{
+//         return () =>{
+//             return `hello`;
+//         };
+//     };
+// };
+// console.log(fun_1); //[Function: fun_1]
+// console.log(fun_1()); //[Function (anonymous)]
+// console.log(fun_1()()); //[Function (anonymous)]
+// console.log(fun_1()()()); //hello // function chaining
+
+// single line function
+// let fun_1 = () => `welcome to arrow function`;
+// console.log(fun_1); //[Function: fun_1]
+// console.log(fun_1()); //welcome to arrow function
+
+// let fun_1 = () => "ARYAN";
+// console.log(fun_1());// ARYAN
+
+// multiple arguments
+// let fun_1 = (arg1, arg2, arg3) => {
+//     console.log(arg1, arg2, arg3);
+// }
+
+// fun_1(1,2,3);// 1 2 3
+// fun_1(123,`aryan`);// 123 aryan undefined
+// fun_1(`aryan`);// aryan undefined undefined
+// fun_1();// undefined undefined undefined
+// fun_1(`aryan` == `aryan`);// true undefined undefined
+// fun_1(`aryan` === `aryan`, 5 === 3);// true false undefined
+
+// wrong 
+// let fun_1,fun_2;
+// fun_1 (()=>{return "Hello_1"},
+//             fun_2,
+//             ()=>"Hello_3"
+//             );
+//  fun_1(()=>"Hello_1", ()=>"Hello_2", ()=>"Hello_3");
+
+// 24-11-2022 ++++++++++++++++++++++++++++++++++++++++++++
+
+// array ...................................
+// (...)spread operator
+
+// let arr1 = [10,20,30];
+// let arr2 = [100,200,300];
+// let copy_array;
+
+// copy_array = [...arr1,arr2];// (...)spread operator
+// console.log(copy_array);// [ 10, 20, 30, [ 100, 200, 300 ] ]
+
+// copy_array = [...arr1,...arr2];// (...)spread operator
+// console.log(copy_array);// [ 10, 20, 30, 100, 200, 300 ]
+
+// copy_array = arr1;
+// console.log(copy_array);// [ 10, 20, 30 ]
+
+// copy_array = arr1.slice(0);
+// console.log(copy_array);// [ 10, 20, 30 ]
+
+// copy_array = arr1;
+// arr1.push(40);
+// copy_array.push(50);
+// console.log(copy_array);// [ 10, 20, 30, 40, 50 ]
+// console.log(arr1);// [ 10, 20, 30, 40, 50 ]
+
+// copy_array = arr1;
+// console.log(arr1 == copy_array);// true
+// copy_array = arr1.slice(0);
+// console.log(arr1 == copy_array);// false
+
+// function...................................
+
+// default parameters
+// function f_1(arg1 = "Hello_1", arg2 = "Hello_2", arg3 = "Hello_3")
+// {
+//     console.log(arg1, arg2, arg3);
+// }
+// f_1();// Hello_1 Hello_2 Hello_3
+// f_1(1234,"aryan");// 1234 aryan Hello_3
+// f_1("aryan",);//aryan Hello_2 Hello_3
+
+// f_1(undefined,undefined,undefined);// Hello_1 Hello_2 Hello_3
+// f_1(null,null,null);// null null null
+// f_1(undefined,undefined,"aryan");// Hello_1 Hello_2 aryan
+// f_1(`w1`,`w2`,`w3`,`w4`);// w1 w2 w3
+// f_1(undefined,undefined);// Hello_1 Hello_2 Hello_3
+// f_1(null,null);// null null Hello_3
+
+// (...)spread operator in function
+// function f_1(arg1,...arg2)
+// {
+//     console.log(arg1);
+//     console.log(arg2);
+// }
+// f_1();// undefined
+//       // []
+
+// f_1("hello 1");// hello 1
+//                // []
+
+// f_1("h1","h2","h3");// h1
+//                     // [ 'h2', 'h3' ]
+
+// f_1(undefined,undefined);// undefined
+//                          // [ undefined ]
+
+// f_1(undefined,null);// undefined
+//                     // [ null ]
+
+// f_1(null,null);// null
+//                // [ null ]
+
+// function f_1(...arg1,...arg2)
+// {};// syntax error -> A rest parameter must be last in a parameter list.
 
 
 
