@@ -849,4 +849,41 @@
 
 // arr.forEach((v, i, a) => console.log(${i} - ${v} - ${a}));
 
+// 29-11-2022
+
+// let stocks = {
+//     Fruits : ["strawberry", "grapes", "banana", "apple"],
+//     liquid : ["water", "ice"],
+//     holder : ["cone", "cup", "stick"],
+//     toppings : ["chocolate", "peanuts"],
+// };
+
+// let order = (call_production) =>{
+//     console.log("Order placed. Please call production")
+//     production();
+// };
+    
+// let production = () =>{
+//     console.log("Production has started")
+//     setTimeout(()=>{
+//         console.log(`The ${stocks.Fruits[0]} has been chopped`)
+//         setTimeout(()=>{
+//             console.log(`${stocks.liquid[0]} and ${stocks.liquid[1]} Added`)
+//             setTimeout(()=>{
+//                 console.log("start the machine")
+//                 setTimeout(()=>{
+//                     console.log(`Ice cream placed on ${stocks.holder[1]}`)
+//                     setTimeout(()=>{
+//                         console.log(`${stocks.toppings[0]} as toppings`)  
+//                         setTimeout(()=>{
+//                             console.log("serve Ice cream")        
+//                         },1000)  
+//                     },1000)    
+//                 },1000)
+//             },1000)
+//         },1000)
+//     },1000)
+// };
+
+// order(0,production);
 
