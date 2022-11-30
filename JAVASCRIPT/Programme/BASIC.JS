@@ -858,9 +858,9 @@
 //     toppings : ["chocolate", "peanuts"],
 // };
 
-// let order = (call_production) =>{
-//     console.log("Order placed. Please call production")
-//     production();
+// let order = (fruit,call_production) =>{
+//     console.log(`${stocks.Fruits[fruit]} selected and Order placed. Please call production`)
+//     call_production;
 // };
     
 // let production = () =>{
@@ -885,5 +885,5 @@
 //     },1000)
 // };
 
-// order(0,production);
+// order(0,production());
 
