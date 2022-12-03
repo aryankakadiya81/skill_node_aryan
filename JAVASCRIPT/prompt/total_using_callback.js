@@ -18,10 +18,10 @@
 
 // let total = (number, callback) => 
 // {
-//     if(number <= 9)
-//     {
-//         return number;
-//     }
+//     // if(number <= 9)
+//     // {
+//     //     return number;
+//     // }
 //     return callback(number);
 // }
 // console.log(total(9999999988, sum));
@@ -88,28 +88,4 @@
 // let number = 9999999988;
 // console.log(total(number, sum));
 
-
-// -------------------------------- paresh sir -------------------------------
-
-// let sum = (number1) => 
-// {
-//     let sum1 = 0;
-//     console.log(number1);
-//     while (number1 != 0) 
-//     {
-//         sum1 = sum1 + number1 % 10;
-//         number1 = parseInt(number1 / 10);
-//     }
-//     return sum1;
-// }
-
-// let total = (number, callback) => 
-// {
-//     let n =  callback(number);
-//     if(n>=9)
-//         return sum(n);
-// }
-
-// let number = 9999999988;
-// console.log(total(number, sum));
 
