@@ -1015,24 +1015,26 @@
 */
 // ------------------------------------------------------------------------
    
-    
-// let promise1 = new Promise((resolve,reject)=>{
+// promise1.then -----------------------------------------    
+// let promise1 = new Promise((resolve,reject) =>
+// {
 //     resolve("promises");
 // });
-// // console.log(typeof (promise1))
+
+// console.log(typeof (promise1)) //Object 
 // promise1.then((posRes)=>{
 //     console.log("resole : "+posRes);
 // },(errRes)=>{
 //     console.log("reject :"+errRes);
 // });
-// welcome to promises
 
 
 // console.log("Before")
-// let promise1 = new Promise((resolve,reject)=>{
+// let promise1 = new Promise((resolve,reject) =>
+// {
 //     setTimeout(()=>{
 //         resolve("Hello");
-//     },5000);
+//     },1000);
 // });
 // promise1.then((posRes)=>{
 //     console.log(posRes);
@@ -1043,14 +1045,17 @@
 
 
 
-// let promise1 = new Promise((resolve,reject)=>{
+// let promise1 = new Promise((resolve,reject) =>
+// {
 //     setTimeout(()=>{
 //         resolve("Hello_1");
 //     },0);
 // });
-// let promise2 = new Promise((resolve,reject)=>{
+// let promise2 = new Promise((resolve,reject)=>
+// {
 //     resolve("Hello_2");
 // });
+
 // promise1.then((posRes)=>{
 //     console.log(posRes);
 // },(errRes)=>{
@@ -1063,15 +1068,19 @@
 // });
 
 
-// let promise1 = new Promise((resolve,reject)=>{
+// let promise1 = new Promise((resolve,reject) =>
+// {
 //     resolve("Hello_1");
 // });
-// let promise2 = new Promise((resolve,reject)=>{
+// let promise2 = new Promise((resolve,reject) =>
+// {
 //     resolve("Hello_2");
 // });
-// let promise3 = new Promise((resolve,reject)=>{
+// let promise3 = new Promise((resolve,reject) =>
+// {
 //     resolve("Hello_3");
 // });
+
 // promise1.then((posRes)=>{
 //     console.log(posRes);
 // },(errRes)=>{
@@ -1088,46 +1097,87 @@
 //     console.log(errRes);
 // });
 
+// Promise.all -----------------------------------------
+// let promise1 = new Promise((resolve,reject) =>
+// {
+//     resolve("Hello_1");
+// });
+// let promise2 = new Promise((resolve,reject) =>
+// {
+//     resolve("Hello_2");
+// });
+// let promise3 = new Promise((resolve,reject) =>
+// {
+//     resolve("Hello_3");
+// });
+
+// Promise.all([promise1,promise2,promise3]).then((posRes)=>{
+//     console.log(posRes);// [ 'Hello_1', 'Hello_2', 'Hello_3' ]
+// },(errRes)=>{
+//     console.log(errRes);
+// });
+
+
+// Promise.race -----------------------------------------
+// let promise1 = new Promise((resolve,reject) =>
+// {
+//     resolve("Hello_1");
+// });
+// let promise2 = new Promise((resolve,reject) =>
+// {
+//     resolve("Hello_2");
+// });
+// let promise3 = new Promise((resolve,reject) =>
+// {
+//     resolve("Hello_3");
+// });
+// Promise.race([promise1,promise2,promise3]).then((posRes)=>{
+//     console.log(posRes);// //Hello_1
+// },(errRes)=>{
+//     console.log(errRes);
+// });
+
+
+// Promise.all -----------------------------------------
+// let promise1 = new Promise((resolve,reject) =>
+// {
+//     resolve("Hello_1");
+// });
+// let promise2 = new Promise((resolve,reject) =>
+// {
+//     resolve("Hello_2");
+// });
+// let promise3 = new Promise((resolve,reject) =>
+// {
+//     reject("Error");
+// });
 // Promise.all([promise1,promise2,promise3]).then((posRes)=>{
 //     console.log(posRes);
 // },(errRes)=>{
 //     console.log(errRes);
 // });
-//[ 'Hello_1', 'Hello_2', 'Hello_3' ]
 
 
-
-
-// Promise.race([promise1,promise2,promise3]).then((posRes)=>{
-//     console.log(posRes);
-// },(errRes)=>{
-//     console.log(errRes);
-// });
-//Hello_1
-
-
-
-
-// let promise1 = new Promise((resolve,reject)=>{
+// Promise.allSettled -----------------------------------------
+// let promise1 = new Promise((resolve,reject) =>
+// {
 //     resolve("Hello_1");
 // });
-// let promise2 = new Promise((resolve,reject)=>{
+// let promise2 = new Promise((resolve,reject) =>
+// {
 //     resolve("Hello_2");
 // });
-// let promise3 = new Promise((resolve,reject)=>{
+// let promise3 = new Promise((resolve,reject) =>
+// {
 //     reject("Error");
 // });
-    // Promise.all([promise1,promise2,promise3]).then((posRes)=>{
-    //     console.log(posRes);
-    // },(errRes)=>{
-    //     console.log(errRes);
-    // });
 // Promise.allSettled([promise1,promise2,promise3]).then((posRes)=>{
 //     console.log(posRes);
 // },(errRes)=>{
 //     console.log(errRes);
 // });
-// --------------------------------------------------------------------------------------
+
+// -----------------------------------------
 
 // let promise1 = new Promise((resolve,reject)=>{
 //     resolve("Hello");
