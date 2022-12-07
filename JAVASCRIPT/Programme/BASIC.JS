@@ -1302,3 +1302,84 @@
 // add(10, 10)(20, 5)(5, 10)(100, 10);
 // console.log("--------------------------------------------")
 // add(10,10)(10,10)(10,10)(10,10);
+
+// 07/12/2022 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// call, apply, bind
+
+
+// let student = {
+//     name : "ARYAN",
+//     age : 18,
+//     course : "Node JS",
+//     getStudentName : function() 
+//     {
+//         return this;
+//     }
+// }
+// console.log(student.getStudentName());   // {
+//                                          //   name: 'ARYAN',
+//                                          //   age: 18,
+//                                          //   course: 'Node JS',
+//                                          //   getStudentName: [Function: getStudentName]
+//                                          // }
+
+// ----------------------------------------------
+// let student1 = {
+//     name : "ARYAN",
+//     age : 18,
+//     course : "Node JS",
+// }
+// let student2 = {
+//     name : "UTSAV",
+//     age : 19,
+//     course : "React JS",
+// }
+// getStudentName = function() 
+// {
+//     console.log(this.name);
+// }
+// getStudentName.call(student1); //ARYAN
+// getStudentName.call(student2); //UTSAV
+
+
+// ----------------------------------------------
+let student1 = {
+    name : "ARYAN",
+    age : 18,
+    course : "Node JS",
+}
+let student2 = {
+    name : "UTSAV",
+    age : 19,
+    course : "React JS",
+}
+getStudentName = function(city,state,country) 
+{
+    console.log(`${this.name} - ${city} - ${state} - ${country}`);
+}
+// getStudentName.call(student1,"Surat","Guj","Ind"); // ARYAN - Surat - Guj - Ind
+// getStudentName.call(student1,"Surat","Guj"); // ARYAN - Surat - Guj - undefined
+
+
+// getStudentName.apply(student1,["Surat","Guj","Ind"]); // ARYAN - Surat - Guj - Ind
+// getStudentName.apply(student1,["Surat","Guj"]); // ARYAN - Surat - Guj - undefined
+ 
+   
+// getStudentName = function() 
+// {
+//     console.log(`${this.name}`);
+// }
+
+// let USE = getStudentName.bind(student1);
+// USE() //ARYAN
+
+
+
+// getStudentName = function(city,state,country) 
+// {
+//     console.log(`${this.name} - ${city} - ${state} - ${country}`);
+// }
+// let USE = getStudentName.bind(student1,"Surat","Guj","Ind");
+
+// USE() // ARYAN - Surat - Guj - Ind
