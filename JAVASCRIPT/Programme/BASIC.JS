@@ -1380,6 +1380,9 @@ getStudentName = function(city,state,country)
 // {
 //     console.log(`${this.name} - ${city} - ${state} - ${country}`);
 // }
-// let USE = getStudentName.bind(student1,"Surat","Guj","Ind");
 
+// let USE = getStudentName.bind(student1,["Surat","Guj","Ind"]);
+// USE() // ARYAN - Surat,Guj,Ind - undefined - undefined
+
+// let USE = getStudentName.bind(student1,"Surat","Guj","Ind");
 // USE() // ARYAN - Surat - Guj - Ind
