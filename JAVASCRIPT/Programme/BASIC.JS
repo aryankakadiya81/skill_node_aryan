@@ -1344,20 +1344,20 @@
 
 
 // ----------------------------------------------
-let student1 = {
-    name : "ARYAN",
-    age : 18,
-    course : "Node JS",
-}
-let student2 = {
-    name : "UTSAV",
-    age : 19,
-    course : "React JS",
-}
-getStudentName = function(city,state,country) 
-{
-    console.log(`${this.name} - ${city} - ${state} - ${country}`);
-}
+// let student1 = {
+//     name : "ARYAN",
+//     age : 18,
+//     course : "Node JS",
+// }
+// let student2 = {
+//     name : "UTSAV",
+//     age : 19,
+//     course : "React JS",
+// }
+// getStudentName = function(city,state,country) 
+// {
+//     console.log(`${this.name} - ${city} - ${state} - ${country}`);
+// }
 // getStudentName.call(student1,"Surat","Guj","Ind"); // ARYAN - Surat - Guj - Ind
 // getStudentName.call(student1,"Surat","Guj"); // ARYAN - Surat - Guj - undefined
 
@@ -1386,3 +1386,81 @@ getStudentName = function(city,state,country)
 
 // let USE = getStudentName.bind(student1,"Surat","Guj","Ind");
 // USE() // ARYAN - Surat - Guj - Ind
+
+// 13-12-2022 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// <!--
+//     JSON
+//     ****
+//         JSON Stands for Java Script Object Notation
+//         JSON also called as "JavaScript Objects"
+//         JSON, used to transfer the data over the "Network"
+//         JSON is light weight
+//         Parsing(Reading) of JSON Eazy
+//         Syntax
+//         ******
+//         Objects --- {}
+//         Arrays  --- []
+//         data    --- key & value pairs
+//         key & value separated by using ":"
+//         key & value pairs separated by using ","
+// -->
+
+
+// <script>
+//     let obj = {
+//         sub_one : "ReactJS",
+//         sub_two : "NodeJS",
+//         sub_three : "MongoDB"
+//     };
+//     //read the data by using . opearator
+//     // console.log(
+//     //     obj.sub_one,
+//     //     obj.sub_two,
+//     //     obj.sub_three
+//     // );
+//     //read the data by using [] opearator
+//     // console.log(
+        
+//     //     obj["sub_one"],
+//     //     obj["sub_two"],
+//     //     obj["sub_three"]
+//     // );
+//     // //read the data by using destructuring (ES6)
+//     // let {sub_one,sub_two,sub_three} = obj;
+//     // console.log(sub_one,sub_two,sub_three);
+//     //read the data by using for...in loop
+//     // for(let key in obj){
+//     //     console.log(obj[key]);
+//     // }
+// </script>
+
+
+
+
+// <!-- <script>
+//     let obj = {
+//         frontend:{sub_one:"ReactJS"},
+//         backend:{sub_one:"NodeJS"},
+//         database:{sub_one:"MongoDB"}
+//     };
+//     console.log(
+//         obj.frontend.sub_one,
+//         obj.backend.sub_one,
+//         obj.database.sub_one
+//     );
+// </script> -->
+
+
+
+// <script>
+//     let obj1 = {"key1":"Hello_1"};
+//     console.log( typeof obj1 );         //object
+    
+//     let str1 = JSON.stringify(obj1);
+//     console.log( typeof str1 );         //string
+
+//     let obj2 = JSON.parse(str1);
+//     console.log( typeof obj2 );         //object
+// </script> 
+
