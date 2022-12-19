@@ -35,9 +35,8 @@ mix collections many & one collection
 
 
 
-
+----------------------------------------------------------------------------
 use new
-
 
 db.createCollection("salesman_master")
 db.salesman_master.insertMany([
@@ -76,6 +75,40 @@ db.CLIENT_MASTER.insertMany([
 ])
 db.CLIENT_MASTER.find()
 
+---------------------------------------------------------------------------------------
+db.CLIENT_MASTER.find()
+db.CLIENT_MASTER.find({})
+db.CLIENT_MASTER.find({}).skip(3)
+db.CLIENT_MASTER.find().sort({"Name":1})
+db.CLIENT_MASTER.find().sort({"Name":-1})
+db.CLIENT_MASTER.find().count()
+db.CLIENT_MASTER.find({"Name":"Basu"})
+db.CLIENT_MASTER.find()[0]
+db.CLIENT_MASTER.find()[1]
+db.CLIENT_MASTER.find().pretty
+db.CLIENT_MASTER.find({"baldue":{$eq:0}})
+db.CLIENT_MASTER.find({"baldue":{$ne:0}})
+db.CLIENT_MASTER.find({"baldue":{$gt:0}})
+db.CLIENT_MASTER.find({"baldue":{$gte:0}})
+db.CLIENT_MASTER.find({"baldue":{$lt:0}})
+db.CLIENT_MASTER.find({"baldue":{$lte:0}})
+
+db.CLIENT_MASTER.find({"baldue":{$eq:[2000,0]}})
+
+db.CLIENT_MASTER.find({"baldue":{$in:[2000,0]}})
+db.CLIENT_MASTER.find({"baldue":{$nin:[2000,0]}})
+db.CLIENT_MASTER.find({"baldue":{$nin:[2000,0]}}).count()
+
+db.CLIENT_MASTER.find({$or:[{baldue:{$ne:0}},{"State":{$in:["Maharashtra"]}}]})
 
 
+1. db.CLIENT_MASTER.find()
+2. db.CLIENT_MASTER.find()
+3. db.CLIENT_MASTER.find()
+4. db.product_master.find()
+5. db.CLIENT_MASTER.find({"city":{$eq:"Bombay"}}) 
+   db.CLIENT_MASTER.find({"city":{$eq:"Bombay"}}).count()
+
+6. db.salesman_master.find({"salamt":{$eq:3000}})
+   db.salesman_master.find({"salamt":{$eq:3000}}).count()
 
