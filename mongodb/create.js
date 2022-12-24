@@ -214,5 +214,27 @@
 // A15) db.books.update({ title:{$eq:'Oracle in simple way'}},{$set:{"author.profile.books":10}})
 //      db.books.find({ title:{$eq:'Oracle in simple way'}})
 
+// 23-12-2022 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// db.createCollection("students")
+// db.students.insertMany([
+//     {_id:1,name:"Ram",marks:[82,35,99]},
+//     {_id:2,name:"Ravi",marks:[75,90,95]},
+//     {_id:3,name:"Ramesh",marks:[65,45,35]},
+//     {_id:4,name:"Rajesh",marks:[54,36,69]},
+// ]) 
+
+
+// db.books.find({tags:{$all : ["database","sql"]}}) // using $all
+
+// db.students.find({marks: {$elemMatch: {$gte: 80, $lt: 90}}}) // using $elemMatch
+
+// db.books.find({tags:{$size:3}}) // using $size 
+
+// db.books.find({title: {$regex: '^d'}})
+
+// db.books.find({isbn: {type: "int"}})
+
+// db.books.findOne().isbn
+// typeof db.books.findOne().isbn
 

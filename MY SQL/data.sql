@@ -1000,3 +1000,4 @@
 -- in (select clientno from sales_order where orderno in 
 -- (select orderno from sales_order_details where (Qtyordered * Productrate) >= 10000));
 
+-- acid properties in rdbms 
