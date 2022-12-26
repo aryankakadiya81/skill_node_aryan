@@ -1001,3 +1001,105 @@
 -- (select orderno from sales_order_details where (Qtyordered * Productrate) >= 10000));
 
 -- acid properties in rdbms 
+
+
+-- new task ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+-- source D:\ARYAN KAKADIYA\PROGRAMME\NODE_JS\MY SQL\data.sql
+
+-- tblcust (cno, cname, address)
+-- tblproduct(pno, name, price)
+-- tblpurchase(tid, cno, pno, pur_date)
+
+
+-- create table tblcust(
+--      cno varchar(50), 
+--      cname varchar(50), 
+--      address varchar(50),
+--      constraint pk_tblcust primary key(cno)
+-- );
+
+
+-- insert into tblcust values('c1001','Rajesh', 'Varachha');
+-- insert into tblcust values('c1002','Parth', 'Adajan');
+-- insert into tblcust values('c1003','Nirav', 'Katargam');
+-- insert into tblcust values('c1004','Jagin', 'Varachha');
+-- insert into tblcust values('c1005','Jyot', 'Adajan');
+
+-- create table tblproduct(
+--     pno varchar(50), 
+--     pname varchar(50), 
+--     price int,
+--     constraint pk_tblproduct primary key(pno) 
+--     );
+
+
+-- insert into tblproduct values('e1001','Dell Laptop',57000);
+-- insert into tblproduct values('e1002','Lenovo Laptop',45500);
+-- insert into tblproduct values('e1003','Asus Laptop',37000);
+
+-- create table tblpurchase(
+--     tid int, 
+--     cno varchar(50), 
+--     pno varchar(50), 
+--     pur_date date,
+--     constraint pk_tblpurchase primary key (tid),
+--     constraint fk_tblpurchase_tblcust foreign key(cno) references tblcust(cno),
+--     constraint fk_tblpurchase_tblproduct foreign key(pno) references tblproduct(pno)
+--     );
+-- insert into tblpurchase values(1,'c1001','e1001','2021-01-20');
+-- insert into tblpurchase values(2,'c1002','e1002','2020-02-10');
+-- insert into tblpurchase values(3,'c1003','e1002','2020-03-30');
+-- insert into tblpurchase values(4,'c1001','e1003','2020-03-25');
+-- insert into tblpurchase values(5,'c1002','e1001','2021-01-21');
+-- insert into tblpurchase values(6,'c1003','e1002','2021-01-19');
+-- insert into tblpurchase values(7,'c1001','e1002','2020-02-06');
+-- insert into tblpurchase values(8,'c1002','e1002','2021-12-21');
+-- insert into tblpurchase values(9,'c1002','e1003','2022-07-12');
+-- insert into tblpurchase values(10,'c1001','e1001','2021-12-24');
+
+-- select * from tblpurchase;
+-- select * from tblproduct;
+-- select * from tblcust;
+
+
+
+-- 1. Display purchase detail as customer name, product name, purchase date and price of Rajesh.
+-- select tblcust.cname,tblproduct.pname,tblpurchase.pur_date,tblproduct.price
+-- from tblcust
+-- inner join tblproduct
+-- inner join tblpurchase
+-- on tblcust.cno = tblpurchase.cno
+-- and tblproduct.pno = tblpurchase.pno
+-- where tblcust.cname = "Rajesh";
+
+
+-- 2. Display total cost earn productwise.
+-- select tblproduct.pname, tblproduct.price, sum(tblproduct.price)
+-- from tblcust
+-- inner join tblproduct
+-- inner join tblpurchase
+-- on tblcust.cno = tblpurchase.cno
+-- and tblproduct.pno = tblpurchase.pno
+-- group by tblproduct.pname;
+
+
+-- 3. Display the customers's name that never purchases any product.
+-- select cno,cname
+-- from tblcust
+-- where cno 
+-- not in (select cno from tblpurchase group by cno);
+
+
+-- 4. Count total numbers of laptop purchase by Parth.
+-- select count(*) as laptop_purchase_by_parth
+-- from tblcust
+-- inner join tblproduct
+-- inner join tblpurchase
+-- on tblcust.cno = tblpurchase.cno
+-- and tblproduct.pno = tblpurchase.pno
+-- where tblcust.cname = "Parth";
+
+
+
+
+
