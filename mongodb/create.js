@@ -364,9 +364,14 @@
 //     db.restaurants.find({},{}).sort({"cuisine":1,"borough":-1});
 
 
-
 // 28. Write a MongoDB query to know whether all the addresses contains the street or not.
+//     db.restaurants.find({ "address.street": { "$exists": true } })
+//     db.restaurants.find({ "address.street": { "$exists": false } })
+
 
 // 29. Write a MongoDB query which will select all documents in the restaurants collection where the coord field value is Double.
+//     db.restaurants.find({ "address.coord": { $type: "double" } })
+
 
 // 30. Write a MongoDB query which will select the restaurant Id, name and grades for those restaurants which returns 0 as a remainder after dividing the score by 7.
+//     db.restaurants.find({ "grades.score": { $mod: [7, 0] } })
