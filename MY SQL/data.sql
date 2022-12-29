@@ -845,7 +845,7 @@
 -- group by b.name 
 -- having max(price) = (select max(price) from products);
 
--- --------------------------------------------------------------------
+-- task-1 (img is available in folder path D:\ARYAN KAKADIYA\PROGRAMME\NODE_JS\MY SQL\task 1.jpg)--------------------------------------------------------------------
 -- select * from client_master;
 -- select * from product_master;      
 -- select * from sales_order;        

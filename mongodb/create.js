@@ -238,7 +238,7 @@
 // db.books.findOne().isbn
 // typeof db.books.findOne().isbn
 
-// 24-12-2022 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// 24-12-2022(restaurant task) +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // 1. Write a MongoDB query to display all the documents in the collection restaurants.
 //    db.restaurants.find();
