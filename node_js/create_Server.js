@@ -6,3 +6,4 @@ let server = http.createServer((req,res) => {
 }).listen(3002, () => {
     console.log("server connected on port 3002");
 })
+// in browser serch in URL :==>   localhost:3002
