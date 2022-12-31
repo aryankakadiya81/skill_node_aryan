@@ -5,7 +5,7 @@ app.use(express.json());
 app.use(express.urlencoded());
 
 app.get("/log", (req,res) => {
-    res.sendFile(__dirname + "/form.html");
+    res.sendFile(__dirname + "/file.html");
 });
 
 app.post("/log", (req,res) => {
