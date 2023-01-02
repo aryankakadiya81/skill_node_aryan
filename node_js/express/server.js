@@ -1,15 +1,15 @@
-// const express = require("express");
-// const app = express();
-// const PORT = 1000;
+const express = require("express");
+const app = express();
+const PORT = 1000;
 
-// app.get("/",(req,res) => {
-//     res.json({msg : "Hello"})
-//     console.log("Hello");
-// })
+app.get("/",(req,res) => {
+    res.json({msg : "Hello"})
+    console.log("Hello");
+})
 
-// app.listen(PORT,() => {
-//     console.log(`server listenin port ${PORT}`)
-// })
+app.listen(PORT,() => {
+    console.log(`server listenin port ${PORT}`)
+})
 // localhost:1000
 
 // .get +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
