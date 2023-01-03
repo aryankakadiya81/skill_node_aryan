@@ -7,7 +7,7 @@ app.use(express.urlencoded());
 
 app.get("/",(req,res) => {
     res.json({msg:"server default"});
-});
+});  
 
 const login = require("./login");
 app.use("/login",login);

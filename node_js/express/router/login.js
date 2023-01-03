@@ -1,6 +1,6 @@
 const express = require("express");
 login = express.Router();
-
+    
 login.get("/",(req,res) => {
     res.json({"msg": "default login"});
 });
