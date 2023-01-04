@@ -9,8 +9,8 @@ app.get("/",(req,res) => {
     res.json({msg:"server default"});
 });  
 
-const login = require("./login");
-app.use("/login",login);
+const enter = require("./enter");
+app.use("/enter",enter);
 
 
 app.listen(port,() => {

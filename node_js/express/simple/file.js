@@ -11,7 +11,7 @@ app.get("/log", (req,res) => {
 app.post("/log", (req,res) => {
     const request = req.body;
     console.log("data",request);
-})
+});
 
 
 // not proper method ----------------------------------- 
