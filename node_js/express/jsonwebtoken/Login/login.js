@@ -4,11 +4,11 @@ const tokenObj = require("../Token/token");
 login = express.Router();
 
 
-login.get("/", (req, res) => {
-    res.json({ 'msg': "inside default login" })
-});
+// login.get("/", (req, res) => {
+//     res.json({ 'msg': "inside default login" })
+// });
 
-login.post("/",(req,res)=>{
+login.get("/",(req,res)=>{
     const id = req.body.id;
     const pwd = req.body.pwd;
     if(id == "aryan" && pwd == "aryan123")
