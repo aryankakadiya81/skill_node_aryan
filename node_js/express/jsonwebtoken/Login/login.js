@@ -13,7 +13,7 @@ login.get("/",(req,res)=>{
     const pwd = req.body.pwd;
     if(id == "aryan" && pwd == "aryan123")
     {
-        const token = jsonwebtoken.sign({id:id,pwd:pwd},"skill",{expiresIn : 60000});
+        const token = jsonwebtoken.sign({id:id,pwd:pwd},"skill",{expiresIn : "60s"});
         tokenObj.token = token;
         res.json({login:"Success",token:token});
     }
