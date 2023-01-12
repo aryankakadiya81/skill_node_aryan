@@ -1,6 +1,0 @@
-// db.stu.insertOne({sno:111,sname:"Ram",fees:37500,course:"Node"});
-db.stu.insertOne({sno:112,sname:"Raj",fees:45000,course:"FullStack"})
-db.stu.insertOne({sno:113,sname:"a",fees:65000,course:"Django"})
-db.stu.insertOne({sno:114,sname:"b",fees:45000,course:"Node"})
-db.stu.insertOne({sno:115,sname:"c",fees:65000,course:"Flutter"})
-db.stu.insertOne({sno:116,sname:"d",fees:25000,course:"Python"})

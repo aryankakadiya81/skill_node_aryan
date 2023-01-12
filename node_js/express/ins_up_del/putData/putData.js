@@ -7,7 +7,7 @@ const url = "mongodb+srv://admin:admin@cluster0.dc5mmuk.mongodb.net/?retryWrites
 
 
 
-putData.get("/",(req,res)=>
+putData.put("/",(req,res)=>
 {
     res.json({msg:"inside putData success"});
 
@@ -15,11 +15,14 @@ putData.get("/",(req,res)=>
         if(err) throw err;
         else
         {
-            const db = connection.db("books");
-            db.collection("booksc").find().toArray((err,arr) => {
-                console.log(arr);
-                res.send(arr);
-            });
+            const db = connection.db("book");
+            db.collection("bookc").updateOne(
+                {isbn: req.body.isbn},
+                {$set:{down: req.body.down}}
+            ),(err,result) => {
+                if (err) throw err;
+                res.send({update:"success"});
+            };
         }
     });
 
