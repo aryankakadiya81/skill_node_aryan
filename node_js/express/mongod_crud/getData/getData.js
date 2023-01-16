@@ -9,7 +9,7 @@ const url = "mongodb+srv://admin:admin@cluster0.dc5mmuk.mongodb.net/?retryWrites
 
 getData.get("/",(req,res)=>
 {
-    res.json({msg:"inside getData success"});
+    // res.json({msg:"inside getData success"});
 
     mongoClient.connect(url,(err,connection) => {
         if(err) throw err;
