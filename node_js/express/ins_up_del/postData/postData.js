@@ -26,7 +26,7 @@ postData.post("/",(req,res)=>
                 if(err) throw err;
                 else
                 {
-                    res.send({"msg":"success"});
+                    res.send({"post":"success"});
                 }
                 });
         }
