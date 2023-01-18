@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keyword" content="keyword">
+    <meta name="discription" content="discription">
+    <meta name="author" content="author">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form 3</title>
+    <link rel="icon" type="x-icon/image" href="../../Pictures/1 (13).jpg">
+    <style>
+        form
+        {
+            /* background-color: red; */
+            text-align: center;   
+        }
+        textarea
+        {
+            /* resize:unset; */
+            /* resize:both; */
+            /* resize:none; */
+            /* resize: vertical; */
+            /* resize:horizontal; */
+        }
+        nav
+        {
+            background-color: azure;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body style="background-color: greenyellow;">
+    <form>
+            <figcaption style="color: red;"><b>Personal Details</b></figcaption><br>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="pwd">Password:</label>
+            <input type="password" name="pwd" id="pwd"><br><br>
+            <label for="Email">E-mail id:</label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="Gender">Gender: &nbsp;</label>
+            <input type="radio" name="Gender" id="Gender">
+            <label for="Male">Male &nbsp;</label>
+            <input type="radio" name="Gender" id="Gender">
+            <label for="Female">Female</label><br><br>
+            <label for="contect">Contect#:</label>
+            <input type="tel" name="contect" id="contect"><br><br>
+
+
+            <figcaption style="color: red;"><b>Educational Qualification</b></figcaption><br>
+            <label for="degree">Degree:</label>
+            <select name="degree" id="degree">
+                <option value="0" selected>--Select Group--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+            <label for="engineering">Engineering:</label>
+            <select name="engineering" id="engineering">
+                <option value="0" selected>--Select Group--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+            <label for="Hobbies">Hobbies:</label>
+            <input type="radio" name="Hobbies" id="Hobbies">
+            <label for="Playing chess">Playing chess</label>
+            <input type="radio" name="Hobbies" id="Hobbies">
+            <label for="Reading Books">Reading Books</label><br><br><br>
+            
+            <figcaption style="color: red;"><b>Address</b></figcaption><br>
+            <textarea name="address" id="address" cols="30" rows="4"></textarea><br><br>
+            <label for="resume">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attch Resume:</label>
+            <input type="file" name="resume" id="resume"><br><br>
+            <input type="submit" name="submit" id="submit" style="color: white; background-color: orange;">
+    </form>
+</body>
+</html>
