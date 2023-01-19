@@ -29,10 +29,6 @@ app.post("/insertData", (req,res) => {
     res.send(result); 
 })
 
-// app.get("/getData",(req,res) => {
-//    res.send(req.body);
-// });
-
 
 app.get('/findData', (req, res) => {
   User.find({}, (err, result) => {

@@ -1,0 +1,23 @@
+pre
+{
+    background-color: blue;
+    color: red; 
+}
+
+/* .inh .div .h1
+{
+    background-color: blueviolet;
+    color: aliceblue;
+} */
+
+.h1
+{
+    background-color: black !important;
+    color: rgb(255, 255, 255);
+}
+
+.inh .div .h1
+{
+    background-color: blueviolet !important;
+    color: aliceblue;
+}
