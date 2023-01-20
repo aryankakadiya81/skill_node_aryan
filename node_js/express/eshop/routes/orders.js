@@ -1,30 +1,48 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const orders = express.Router();
-orders.use(express.json());
-orders.use(express.urlencoded());
+const router = express.Router();
+const Orders = require('../Models/ordersModel');
+
+router.use(express.json());
+router.use(express.urlencoded());
 
 
-const Orders = require('../models/orders');
-orders.get('/', (req, res) => {
+router.get('/', (req, res) => {
     Orders.find({}, (err, result) => {
         if (err) throw err;
         else {
             res.send(result);
         }
-    })
-    // res.json({"get":"Done orders+++++++++++++++++"})
+    });
 });
 
-orders.post('/', (req, res) => {
-    const result = Orders.insertMany(req.body, (err, result) => {
+router.post('/', (req, res) => {
+    Orders.insertMany(req.body, (err, result) => {
         if (err) throw err;
         else {
             res.json({ "msg": "insert Success...!" });
         }
     });
+
 });
 
+router.put('/', (req, res) => {
+    Orders.updateOne(req.body.select, { $set: req.body.update }, (err, result) => {
+        if (err) throw err;
+        else {
+            res.send(result);
+        };
+    });
 
-module.exports = orders;
+});
 
+router.delete('/', (req, res) => {
+    Orders.deleteOne(req.body, (err, result) => {
+        if (err) throw err;
+        else {
+            res.send(result);
+        };
+    });
+});
+
+module.exports = router;

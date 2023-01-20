@@ -1,22 +1,31 @@
 const express = require('express');
-const app = express();
-const morgan = require("morgan");
-const { default: mongoose } = require('mongoose');
+const mongoose = require('mongoose');
+const morgan = require('morgan');
 const cors = require("cors");
+const app = express();
 require("dotenv/config");
-const PORT = process.env.PORT;
+const PORT = process.env.PORT
 
+//cors
 app.use(cors());
 app.options("*", cors());
-mongoose.set("strictQuery", true);
-mongoose.pluralize(null);
-app.use(express.json());
-app.use(express.urlencoded());
 
+//strictQuery
+mongoose.pluralize(null);
+mongoose.set("strictQuery", true);
+app.use(morgan('tiny'))
+
+//json
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
+
+//Default
 app.get('/', (req, res) => {
     res.json({ 'msg': "default" });
 });
 
+
+// database connect
 mongoose.connect(process.env.CONNECTION_STRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -26,35 +35,36 @@ mongoose.connect(process.env.CONNECTION_STRING, {
         console.log(err);
     });
 
-
-app.use('/getcategory', require('./routes/categories'));
+// getdata
 app.use('/getusers', require('./routes/users'));
+app.use('/getcategory', require('./routes/category'));
 app.use('/getproducts', require('./routes/products'));
 app.use('/getorders', require('./routes/orders'));
-app.use('/getorderitems', require('./routes/order-items'));
+app.use('/getorderitems', require('./routes/orderitems'));
 
-app.use('/postcategory', require('./routes/categories'));
+//Postdata
 app.use('/postusers', require('./routes/users'));
+app.use('/postcategory', require('./routes/category'));
 app.use('/postproducts', require('./routes/products'));
 app.use('/postorders', require('./routes/orders'));
-app.use('/postorderitems', require('./routes/order-items'));
+app.use('/postorderitems', require('./routes/orderitems'));
 
+//updatedata
+app.use('/updateusers', require('./routes/users'));
+app.use('/updatecategory', require('./routes/category'));
+app.use('/updateproducts', require('./routes/products'));
+app.use('/updateorders', require('./routes/orders'));
+app.use('/updateorderitems', require('./routes/orderitems'));
+
+//deletedata
+app.use('/deleteusers', require('./routes/users'));
+app.use('/deletecategory', require('./routes/category'));
+app.use('/deleteproducts', require('./routes/products'));
+app.use('/deleteorders', require('./routes/orders'));
+app.use('/deleteorderitems', require('./routes/orderitems'));
+
+
+//server Listen
 app.listen(PORT, () => {
     console.log(`Server listening Port : ${PORT}`);
-});
-
-
-
-// {
-//     "id": "1",
-//     "name": "aryan",
-//     "email": "aryan@gmail.com",
-//     "passwordHash": "12345",
-//     "street": "abc",
-//     "apartment": "xyz",
-//     "city": "surat",
-//     "zip": 123456,
-//     "country": "ind",
-//     "phone": "12345",
-//     "isAdmin": true
-// }
+})

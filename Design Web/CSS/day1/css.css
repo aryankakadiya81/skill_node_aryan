@@ -1,0 +1,102 @@
+/* @import "./css1.css"; */
+/* p{
+background-color: green;
+color: white;
+left: 20%;
+height: 100px;
+    width: 300px;
+    text-align: center;
+} */
+
+/* .para
+{
+    background-color: black;
+    color: white;
+    left: 20%;
+    height: 100px;
+    width: 300px;
+    text-align: center;   
+}
+#an123
+{
+    background-color: blue;
+    color: white;
+    left: 20%;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+}*/
+
+.div-1{
+    background-color: black unset;
+    color: red ;
+    width: 200px unset;
+}
+.div-2{
+    background-color: blue unset;
+    color: blue unset;
+    height: 110px unset;
+    width: 100px;
+} 
+
+
+/* .div ,.par{
+    color: black;
+    background-color: bisque;
+} */
+
+/* one type of child selector */
+/* div p{
+    color: black;
+    background-color: bisque;
+} */
+/* .div .par{
+    color: black;
+    background-color: bisque;
+} */
+
+/* .div > p{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;
+} */
+
+/* .div > p, h1{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;
+} */
+
+/* h1 + p{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;
+} */
+
+/* h1 + p + b{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;
+} */
+
+/* h1 ~ p{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;   
+} */
+
+/* .op1:link{
+    color: blue;
+} */
+
+/* a:active{
+    color: green;
+
+} 
+a:hover{
+    background-color: darkorange;
+}
+
+a:visited{
+    color: aqua;
+}*/
