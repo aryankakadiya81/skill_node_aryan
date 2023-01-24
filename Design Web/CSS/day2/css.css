@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 .main{
     display: flex;
     padding: 10px;
@@ -109,9 +110,162 @@
 .boxx-2{
     height: 300px;
     width: 300px;
+    margin-left: 400px;
+    margin-top: 140px;
     background-color: bisque;
     border: 5px solid blue;
     outline: 5px solid darkmagenta;
-    outline-offset: 150px;
-    outline-offset: ;
+    outline-offset: 100px;
 }
+
+.opacity{
+    height: 300px;
+    width: 300px;
+    margin-left: 400px;
+    margin-top: 140px;
+    background-color: bisque;
+    opacity: 0.5;
+}
+
+button{
+    
+    background-color: red;
+    border: none;
+    padding: 10px 50px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+button:hover{
+    outline: 2px solid darkgreen ;
+}
+
+button:focus{
+    border: 5px dotted black;
+    box-shadow: black 5px 5px 1px;
+}
+
+.link-1{
+    text-decoration: none;
+    background-color: red;
+    border: none;
+    padding: 10px 50px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 10px;
+}
+a:hover{
+    outline: 2px solid darkgreen;
+    border: 5px dashed black;
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+}
+
+input{
+    height: 45px;
+    width: 120px;
+    background-color: lightgreen;
+    border: none;
+    padding: 100px, 220px;
+    color: aliceblue;
+    border-radius: 10px;
+    font-weight: bold;
+}
+input:hover{
+    border: 2px solid black;
+    box-shadow: 5px 5px 1px red;
+}
+input:focus{
+    box-shadow: 2px 2px 0.5px red;
+    border: 5px red solid;
+}
+
+.txtcolour{
+    color: blue;
+    font-weight: bolder;
+    /* text-decoration: underline; */
+    /* text-decoration: overline; */
+    /* text-decoration: line-through; */
+
+}
+
+/* .text-align{
+    text-align: center;
+    color: crimson;    
+}
+.text-align p:nth-child(1){
+    text-align: left;
+}
+
+.text-align p:nth-child(2){
+    text-align: right;
+}
+.text-align p:nth-child(3){
+    text-align: center;
+}
+.text-align p:nth-child(4){
+    text-align: left;
+} */
+
+
+
+/* .text-align p:nth-child(1){
+    text-decoration: overline;
+}
+.text-align p:nth-child(2){
+    text-decoration: line-through;
+}
+.text-align p:nth-child(3){
+    text-decoration: underline;
+}
+.text-align p:nth-child(4){
+    text-decoration: underline dotted blue;
+}
+.text-align p:nth-child(5){
+    text-decoration: wavy black line-through;
+} */
+
+/* font-family: family-name|generic-family|initial|inherit; */
+.font-family p:nth-child(1){
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Roboto Slab',serif;
+}
+.font-family p:nth-child(2){
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+
+.font-size p{
+    font-size: 30px;
+}
+
+
+.font-style p:nth-child(1){
+    font-style: italic;
+}
+.font-style p:nth-child(2){
+    font-style: oblique;
+}
+
+
+.font-variant{
+    font-variant: small-caps;
+}
+
+.font-weight{
+    /* font-weight: lighter; */
+    /* font-weight: bold; */
+    font-weight: bolder;
+}
+
+.text-height{
+    font-size: 20px;
+    line-height: 20px;
+}
+
+
+
+

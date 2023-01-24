@@ -4,7 +4,10 @@ const morgan = require('morgan');
 const cors = require("cors");
 const app = express();
 require("dotenv/config");
-const PORT = process.env.PORT
+const authJwt = require("./Helpers/jwt");
+// Authentication 
+// app.use(authJwt);
+const PORT = process.env.PORT;
 
 //cors
 app.use(cors());
@@ -67,4 +70,4 @@ app.use('/deleteorderitems', require('./routes/orderitems'));
 //server Listen
 app.listen(PORT, () => {
     console.log(`Server listening Port : ${PORT}`);
-})
+});

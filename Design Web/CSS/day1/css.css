@@ -101,16 +101,16 @@ a:visited{
     color: aqua;
 }*/
 
-.ba-1{
+/* .ba-1{
     height: 180px;
     width: 180px;
     background-color: rgb(0, 0, 0);
     color: white;
-}
+} */
 .ba-2{
-    width: 70%;
-    height: 70%;
-    background-image: url("./p/10.jpg");
+    width: auto;
+    height: auto;
+    background-image: url("p/12.jpg");
     /* background-repeat: no-repeat; */
     /* background-repeat: repeat; */
     /* background-repeat: repeat-x; */
