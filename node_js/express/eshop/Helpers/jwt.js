@@ -8,6 +8,7 @@ function authJwt() {
         algorithms: ["HS256"],
         isRevoked: isRevoked,
     });
+
 }
 
 module.exports = authJwt;

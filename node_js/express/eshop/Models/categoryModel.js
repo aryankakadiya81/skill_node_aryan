@@ -7,13 +7,22 @@ const categorySchema = new mongoose.Schema({
     image: { type: String, required: true }
 });
 
-const Category = mongoose.model('Categories', categorySchema);
+
+
+categorySchema.virtual("id").get(function () {
+    return this._id.toHexString();
+});
+
+categorySchema.set("toJSON", {
+    virtuals: true,
+});
+
+const Category = mongoose.model('Category', categorySchema);
 
 module.exports = Category;
 
 
 /* {
-    "id": "C0001",
         "name": "Laptop",
             "color": "Black",
                 'icon': "path",

@@ -267,5 +267,266 @@ input:focus{
 }
 
 
+.tc
+{
+    background-color: cornsilk;
+}
+.tc p:nth-child(1)
+{
+    color: brown;
+    font-weight: bold;
+}
+.tc p:nth-child(2)
+{
+    color: chocolate;
+    font-weight: bolder;
+}
+.tc p:nth-child(3)
+{
+    color: chartreuse;
+    font-weight: bolder;
+}
+.tc p:nth-child(4)
+{
+    color: darkblue;
+    font-weight: bolder;
+}
+.tc p:nth-child(5)
+{
+    color: darkgreen;
+    font-weight: bolder;
+}
 
 
+.ta
+{
+    background-color: cornsilk;
+}
+.ta p:nth-child(1)
+{
+    text-align: left;
+}
+.ta p:nth-child(2)
+{
+    text-align: center;
+}
+.ta p:nth-child(3)
+{
+    text-align: right;
+}
+.ta p:nth-child(4)
+{
+    text-align: justify;
+}
+.ta p:nth-child(5)
+{
+    text-align: center;
+}
+
+
+.td
+{
+    background-color: cornsilk;
+}
+.td p:nth-child(1)
+{
+    text-decoration: overline;
+}
+.td p:nth-child(2)
+{
+    text-decoration: line-through;
+}
+.td p:nth-child(3)
+{
+    text-decoration: underline;
+}
+.td p:nth-child(4)
+{
+    text-decoration: underline dotted;
+}
+.td p:nth-child(5)
+{
+    text-decoration: wavy red underline;
+}
+
+
+
+.tt{
+    background-color: cornsilk;
+}
+.tt p:nth-child(1)
+{
+    text-transform: capitalize;
+}
+.tt p:nth-child(2)
+{
+    text-transform: uppercase;
+}
+.tt p:nth-child(3)
+{
+    text-transform: lowercase;
+}
+.tt p:nth-child(4)
+{
+    text-transform: capitalize;
+}
+.tt p:nth-child(5)
+{
+    text-transform: uppercase;
+}
+
+
+.ti{
+    background-color: darkblue;
+    color: white;
+}
+.ti p:nth-child(1)
+{
+    text-indent: 200px;
+} 
+.ti p:nth-child(2)
+{
+    text-indent: 50%;
+}
+.ti p:nth-child(3)
+{
+    text-indent: 20%;
+}
+.ti p:nth-child(4)
+{
+    text-indent: -10px;
+}
+
+
+.ls{
+    background-color: darkblue;
+    color: white;
+}
+.ls p:nth-child(1)
+{
+    letter-spacing: 10px;
+}
+.ls p:nth-child(2)
+{
+    letter-spacing: 20px;
+}
+.ls p:nth-child(3)
+{
+    letter-spacing: 10px;
+}
+.ls p:nth-child(4)
+{
+    letter-spacing: 10px;
+}
+.ls p:nth-child(5)
+{
+    letter-spacing: 20px;
+}
+
+
+.tdi{
+    background-color: darkblue;
+    color: white;
+}
+.tdi p:nth-child(1)
+{
+    direction: rtl;
+}
+.tdi p:nth-child(2)
+{
+    direction: ltr;
+}
+.tdi p:nth-child(3)
+{
+    direction: initial;
+}
+.tdi p:nth-child(4)
+{
+    direction: inherit;
+}
+.tdi p:nth-child(5)
+{
+    direction: rtl;
+}
+
+.ts{
+    background-color: antiquewhite;
+    color: black;
+}
+.ts p:nth-child(1)
+{
+    text-shadow: 10px 5px 2px red;
+}
+
+.ws{
+    background-color: darkblue;
+    color: white;
+}
+.ws p:nth-child(1)
+{
+    word-spacing: 10px;
+}
+.ws p:nth-child(2)
+{
+    word-spacing: 20px;
+}
+.ws p:nth-child(3)
+{
+    word-spacing: 10px;
+}
+.ws p:nth-child(4)
+{
+    word-spacing: 10px;
+}
+.ws p:nth-child(5)
+{
+    word-spacing: 20px;
+}
+
+
+p .a{
+    vertical-align: bottom;
+}
+p .b{
+    vertical-align: baseline;
+}
+p .c{
+    vertical-align: middle;
+}
+p .d{
+    vertical-align: sub;
+}
+p .e{
+    vertical-align: super;
+}
+p .f{
+    vertical-align: text-bottom;
+}
+p .g{
+    vertical-align: top;
+}
+
+
+.whitespace{
+    /* word-space: wrap; */
+    /* word-space: nowrap; */
+    /* word-space: pre; */
+}
+.whitespace{
+    word-wrap: break-word;
+}
+
+.wrap{
+    height: 200px;
+    background: linear-gradient(#ffffff,rgb(248, 248, 248)), linear-gradient(to right, red, purple);
+    background-origin: padding-box, border-box;
+    background-repeat: no-repeat;
+    border: 5px solid transparent;
+}
+
+h1{
+    font-size: 72px;
+    background: -webkit-linear-gradient(red,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

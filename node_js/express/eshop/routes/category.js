@@ -7,15 +7,6 @@ router.use(express.json());
 router.use(express.urlencoded());
 
 
-// router.get('/', (req, res) => {
-//     Category.find({}, (err, result) => {
-//         if (err) throw err;
-//         else {
-//             res.send(result);
-//         }
-//     });
-// });
-
 router.get('/:id', async (req, res) => {
     const category = await Category.findById(req.params.id);
     if (!category) {
@@ -24,26 +15,20 @@ router.get('/:id', async (req, res) => {
     res.status(200).send(category);
 });
 
+router.post('/', async (req, res) => {
+    let category = new Category({
+        name: req.body.name,
+        color: req.body.color,
+        icon: req.body.icon,
+        image: req.body.image
 
-
-router.post('/', (req, res) => {
-    Category.insertMany(req.body, (err, result) => {
-        if (err) throw err;
-        else {
-            res.json({ "msg": "insert Success...!" });
-        }
     });
 
-});
-// router.put('/', (req, res) => {
-//     Category.updateOne(req.body.select, { $set: req.body.update }, (err, result) => {
-//         if (err) throw err;
-//         else {
-//             res.send(result);
-//         };
-//     });
+    category = await category.save();
+    if (!category) return res.status(500).send("The Users cannot be created.....!");
+    res.send(category);
 
-// });
+});
 
 router.put('/:id', async (req, res) => {
     const category = await Category.findByIdAndUpdate(req.params.id,
@@ -60,16 +45,6 @@ router.put('/:id', async (req, res) => {
     res.send(category);
 });
 
-
-// router.delete('/', (req, res) => {
-    //     Category.deleteOne(req.body, (err, result) => {
-        //         if (err) throw err;
-        //         else {
-            //             res.send(result);
-            //         };
-            //     });
-            // });
-            
 router.delete('/:id', async (req, res) => {
 
     const category = await Category.findByIdAndRemove(req.params.id);
@@ -77,5 +52,5 @@ router.delete('/:id', async (req, res) => {
     if (!category) return res.status(500).send("The category cannot be deleted.....!");
     res.send({ massage: "The category is deleted" });
 });
-            
+
 module.exports = router;

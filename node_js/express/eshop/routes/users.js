@@ -3,20 +3,10 @@ const mongoose = require('mongoose');
 const router = express.Router();
 const Users = require('../Models/usersModel');
 const jwt = require("jsonwebtoken");
-const bcrypt = require("bcrypt");
-
 router.use(express.json());
 router.use(express.urlencoded());
+const bcrypt = require('bcrypt');
 
-
-// router.get('/', (req, res) => {
-//     Users.find({}, (err, result) => {
-//         if (err) throw err;
-//         else {
-//             res.send(result);
-//         }
-//     });
-// });
 
 router.get('/:id', async (req, res) => {
     const user = await Users.findById(req.params.id);
@@ -24,16 +14,6 @@ router.get('/:id', async (req, res) => {
         res.status(500).json({ massage: "The User with the give Id was not found....!" });
     }
     res.status(200).send(user);
-});
-
-router.post('/', (req, res) => {
-    Users.insertMany(req.body, (err, result) => {
-        if (err) throw err;
-        else {
-            res.json({ "msg": "insert Success...!" });
-        }
-    });
-
 });
 
 router.post("/login", async (req, res) => {
@@ -57,16 +37,27 @@ router.post("/login", async (req, res) => {
     }
 });
 
+router.post('/', async (req, res) => {
 
-// router.put('/', (req, res) => {
-//     User.updateOne(req.body.select, { $set: req.body.update }, (err, result) => {
-//         if (err) throw err;
-//         else {
-//             res.send(result);
-//         };
-//     });
+    let user = new Users({
+        name: req.body.name,
+        email: req.body.email,
+        passwordHash: bcrypt.hashSync(req.body.passwordHash, 10),
+        street: req.body.street,
+        apartment: req.body.apartment,
+        city: req.body.city,
+        zip: req.body.zip,
+        country: req.body.country,
+        phone: req.body.phone,
+        isAdmin: req.body.isAdmin,
+    });
 
-// });
+    user = await user.save();
+    if (!user) return res.status(500).send("The Users cannot be created.....!");
+    res.send(user);
+
+});
+
 
 router.put('/:id', async (req, res) => {
     const user = await Users.findByIdAndUpdate(req.params.id,
@@ -89,15 +80,6 @@ router.put('/:id', async (req, res) => {
     res.send(user);
 });
 
-// router.delete('/', (req, res) => {
-//     User.deleteOne(req.body, (err, result) => {
-//         if (err) throw err;
-//         else {
-//             res.send(result);
-//         };
-//     });
-// });
-
 router.delete('/:id', async (req, res) => {
 
     const user = await Users.findByIdAndRemove(req.params.id);
@@ -108,4 +90,21 @@ router.delete('/:id', async (req, res) => {
 
 module.exports = router;
 
-module.exports = router;
+
+// Promise
+
+/* router.delete('/:id', (req, res) => {
+    Users.findByIdAndRemove(req.params.id)
+        .then((user) => {
+            if (user) {
+                return res.status(200).json({ success: true, massage: "The User is deleted....!" })
+            }
+            else {
+                return res.status(404).json({ success: false, massage: "The User is not found....!" })
+            }
+        })
+        .catch((err) => {
+            return res.status(500).json({ success: false, error: err });
+        })
+}); */
+

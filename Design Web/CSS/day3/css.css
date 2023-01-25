@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+.demo{
+    background-color: beige;
+    height: 400px;
+    width: 400px;
+}
+
+.demo-1{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border: 5px solid blue;
+}
+
+.margin
+{
+    /* height: 300px; */
+    /* width: 300px; */
+    background-color: red;
+    border: 5px solid blue;
+    /* margin-top: 200px; */
+    /* margin-right: 50px; */
+    /* margin-bottom: 50px; */
+    /* margin-left: 50px; */
+    /* margin: 50px 100px; */
+    margin: 50px 100px 25px;
+    /* margin: 500px 150px 50px 150px; */
+}
+
+.padding
+{
+    /* height: 300px; */
+    width: 300px;
+    background-color: red;
+    border: 5px solid blue;
+    /* padding-top: 20px; */
+    /* padding-right: 20px; */
+    /* padding-bottom: 50px; */
+    /* padding-left: 20px; */
+    /* padding: 20px; */
+    /* padding: 20px 40px; */
+    padding: 20px 30px 40px;
+    /* padding: 20px 30px 40px 50px; */
+}
+
+.content-box
+{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+    border: 10px solid blue;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+.border-box
+{
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    background-color: blue;
+    border: 10px solid red;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+p
+{
+    /* min-width: 800px; */
+    /* min-height: 500px; */
+    /* max-height: 500px; */
+    /* max-width: 400px; */
+    background-color: azure;
+    margin-bottom: 100px;
+}
+
+ol
+{
+    /* list-style-type: armenian; */
+    /* list-style-type: decimal; */
+    /* list-style-type: decimal-leading-zero; */
+    /* list-style-type: georgian; */
+    /* list-style-type: lower-alpha; */
+    /* list-style-type: lower-greek; */
+    /* list-style-type: lower-latin; */
+    /* list-style-type: lower-roman; */
+    /* list-style-type: none; */
+    /* list-style-type: upper-alpha; */
+    /* list-style-type: upper-latin; */
+    /* list-style-type: upper-roman; */
+    /* list-style-type: inside; */
+}
+
+ul
+{
+    list-style-type: disc;
+    /* list-style-type: circle; */
+    /* list-style-type: square; */
+    /* list-style-image: url(../day1/p/12.jpg); */
+    /* list-style-type: inside; */
+}
+
+.box1
+{
+    height: 300px;
+    width: 300px;
+    background-color: blue;
+    box-shadow: 20px 20px 4px red;
+}
+
+.box2
+{
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    box-shadow: -10px -10px 1px red;
+
+}

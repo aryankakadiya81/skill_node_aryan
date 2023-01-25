@@ -3,11 +3,9 @@ const mongoose = require('mongoose');
 const morgan = require('morgan');
 const cors = require("cors");
 const app = express();
+// const authJwt = require("./Helpers/jwt");
 require("dotenv/config");
-const authJwt = require("./Helpers/jwt");
-// Authentication 
-// app.use(authJwt);
-const PORT = process.env.PORT;
+const PORT = process.env.PORT
 
 //cors
 app.use(cors());
@@ -20,12 +18,16 @@ app.use(morgan('tiny'))
 
 //json
 app.use(express.json());
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded());
+
+// Authentication 
+// app.use(authJwt);
 
 //Default
 app.get('/', (req, res) => {
     res.json({ 'msg': "default" });
 });
+
 
 
 // database connect
@@ -66,8 +68,10 @@ app.use('/deleteproducts', require('./routes/products'));
 app.use('/deleteorders', require('./routes/orders'));
 app.use('/deleteorderitems', require('./routes/orderitems'));
 
+// login
+app.use('/user', require('./routes/users'));
 
 //server Listen
 app.listen(PORT, () => {
     console.log(`Server listening Port : ${PORT}`);
-});
+})
