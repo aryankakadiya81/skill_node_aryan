@@ -27,14 +27,13 @@ module.exports = Users;
 
 /* {
         "name": "Satasiya Vrushabh",
-            "email": "vrushabhsatasiya82001@email.com",
-                "passwordHash": "Vru@82001",
-                    "street": "Laxminagar",
-                        "apartment": "Laxminagar",
-                            "city": "surat",
-                                "zip": "395010",
-                                    "country": "India",
-                                        "phone": 7069182001,
-                                            "isAdmin": true
-
+        "email": "vrushabhsatasiya82001@email.com",
+        "passwordHash": "Vru@82001",
+        "street": "Laxminagar",
+        "apartment": "Laxminagar",
+        "city": "surat",
+        "zip": "395010",
+        "country": "India",
+        "phone": 7069182001,
+        "isAdmin": true
 } */

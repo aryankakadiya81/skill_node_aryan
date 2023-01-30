@@ -1,0 +1,108 @@
+input{
+    accent-color: red;
+}
+
+.fname::placeholder{
+    color: green;
+    text-decoration: underline;
+}
+
+/* input::placeholder{
+    color: green;
+    text-decoration: underline;
+}
+
+input:focus{
+    border: 10px dotted red;
+    border: none;
+    outline: 5px solid blue;
+    border-radius: 10px;
+    background-color: bisque;
+    color: chocolate;
+} */
+
+
+::marker{
+    color: red;
+    font-size: 30px;
+    
+}
+
+div:empty{
+    height: 300px;
+    width:300px;
+    background-color: azure;
+    border: 5px solid green;
+}
+
+input:valid{
+    border: 3px solid green;
+    color: green;
+    outline: none;   
+}
+input:invalid{
+border: 3px solid red;
+    color: red;
+    outline: none;
+}
+input,select,textarea:hover{
+    border: 5px solid blue;
+}
+
+/* *:read-only{
+    font-size: 50px;
+    font-style: italic;
+    color: chartreuse;
+} */
+
+/* *:read-write{
+    font-size: 50px;
+    font-style: italic;
+    color: chartreuse;
+} */
+
+/* ------------------------------------------------------------------------ */
+/* h1:only-child{
+    color: red;
+} */
+
+/* h1:only-of-type{
+    color: red;
+} */
+
+/* h1:first-child{
+    color: red;
+} */
+
+/* h1:first-of-type{
+    color: red;
+} */
+
+/* h1:last-child{
+    color: red;
+} */
+
+/* h1:last-of-type{
+    color: red;
+} */
+
+/* h1:not(2){
+    color: red;
+} */
+
+/* h1:nth-child(2){
+    color: red;
+} */
+
+/* h1:nth-last-child(1){
+    color: red;
+} */
+
+h1:nth-last-of-type(3){
+    color: red;
+}
+
+/* h1:only-of-type{
+    color: red;
+} */
+
