@@ -1,0 +1,17 @@
+.d-none{
+    display: none;
+}
+.demo{
+    display: inline;
+}
+.demo p{
+    display: inline;
+}
+.demo div{
+    /* display: block; */
+    /* display: inline; */
+}
+.demo a{
+    /* display: inline; */
+    display: block;
+} 

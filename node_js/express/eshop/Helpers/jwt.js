@@ -1,14 +1,23 @@
-const expressJwt = require("express-jwt");
+const { expressjwt: jwt } = require("express-jwt");
 
-function authJwt() {
-    const secret = process.env.secret;
-    const api = process.env.API_URL;
-    return expressJwt({
-        secret,
-        algorithms: ["HS256"],
-        isRevoked: isRevoked,
-    });
+
+const authJwt = () => {
+    const SECRET = process.env.SECRET;
+    ;
+    return jwt({
+        secret: SECRET,
+        algorithms: ["HS256"]
+    })
+        .unless({
+            path:
+                [
+                    "/users/login",
+                    "/users/register"
+                ]
+        });
 
 }
 
 module.exports = authJwt;
+
+

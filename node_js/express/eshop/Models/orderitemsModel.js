@@ -6,13 +6,13 @@ const orderitemsSchema = new mongoose.Schema({
 });
 
 
-// orderitemsSchema.virtual("id").get(function () {
-//     return this._id.toHexString();
-// });
+orderitemsSchema.virtual("id").get(function () {
+    return this._id.toHexString();
+});
 
-// orderitemsSchema.set("toJSON", {
-//     virtuals: true,
-// });
+orderitemsSchema.set("toJSON", {
+    virtuals: true,
+});
 
 const Orderitems = mongoose.model('Orderitems', orderitemsSchema);
 

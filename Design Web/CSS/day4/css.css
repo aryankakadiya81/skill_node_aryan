@@ -1,11 +1,11 @@
-input{
+/* input{
     accent-color: red;
 }
 
 .fname::placeholder{
     color: green;
     text-decoration: underline;
-}
+} */
 
 /* input::placeholder{
     color: green;
@@ -22,7 +22,7 @@ input:focus{
 } */
 
 
-::marker{
+/* ::marker{
     color: red;
     font-size: 30px;
     
@@ -47,7 +47,7 @@ border: 3px solid red;
 }
 input,select,textarea:hover{
     border: 5px solid blue;
-}
+} */
 
 /* *:read-only{
     font-size: 50px;
@@ -98,11 +98,95 @@ input,select,textarea:hover{
     color: red;
 } */
 
-h1:nth-last-of-type(3){
+/* h1:nth-last-of-type(3){
     color: red;
-}
+} */
+
+/* h1:nth-child(2){
+    color: red;
+} */
 
 /* h1:only-of-type{
     color: red;
 } */
+
+header div nav a:nth-last-of-type(2)
+{
+    color: red;
+}
+
+header div nav a:nth-of-type(1)
+{
+    color: red;
+}
+
+body > h1:nth-of-type(2)
+{
+    color: red;
+}
+
+body > h1:nth-of-type(5)
+{
+    color: red;
+}
+
+body > h1:nth-of-type(7)
+{
+    color: red;
+}
+
+section div p:nth-of-type(1)
+{
+    color: red;
+}
+
+ul li div section div h1:only-child
+{
+    color: red;
+}
+
+section ~ div ~ div>h1:nth-of-type(2)
+{
+    color: red;
+}
+
+div ~ div > h1:nth-last-of-type(4)
+{
+    color: red;
+}
+
+div span p:only-child
+{
+    color: red;
+}
+
+div span ~ span p:nth-of-type(2)
+{
+    color: red;
+}
+
+div > div h1:nth-child(4)
+{
+    color: red;
+}
+
+div > div h1:nth-last-of-type(1)
+{
+    color: red;
+}
+
+body > div ~ div ~ h1:nth-last-of-type(1)
+{
+    color: red;
+}
+
+body > div ~ div ~ h1:nth-last-of-type(4)
+{
+    color: red;
+}
+
+body > div ~ div ~ h1:nth-last-of-type(7)
+{
+    color: red;
+}
 

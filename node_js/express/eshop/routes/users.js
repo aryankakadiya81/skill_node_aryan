@@ -5,8 +5,18 @@ const Users = require('../Models/usersModel');
 const jwt = require("jsonwebtoken");
 router.use(express.json());
 router.use(express.urlencoded());
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
+
+router.get('/', async (req, res) => {
+    const userList = await Users.find()
+        .populate("name")
+        .sort({ name: -1 });
+    if (!userList) {
+        res.status(500).json({ success: fales });
+    }
+    res.send(userList);
+});
 
 router.get('/:id', async (req, res) => {
     const user = await Users.findById(req.params.id);
@@ -37,7 +47,7 @@ router.post("/login", async (req, res) => {
     }
 });
 
-router.post('/', async (req, res) => {
+router.post('/register', async (req, res) => {
 
     let user = new Users({
         name: req.body.name,
