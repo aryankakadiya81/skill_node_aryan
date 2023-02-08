@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+
+.mainbox{
+    display: flex;
+    height: 600px;
+    width: 1500px;
+    border: 5px solid black;
+    margin-top: 100px;
+    margin-left: 40px;
+    position: relative;
+}
+
+.b1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+}
+
+.b1 > div{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+}
+
+.b2{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.b2 > div{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+.b3{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.b3 > div{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.b4{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.b4 > div{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.b5{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+.b5 > div{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.b6{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+}
+
+.b6 > div{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+}
+
+.b7{
+    height: 100px;
+    width: 100px;
+    background-color: chocolate;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+
+.b7 > div{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+
+.b8{
+    height: 100px;
+    width: 100px;
+    background-color: gold;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.b8 > div{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.b9{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.b9 > div{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+

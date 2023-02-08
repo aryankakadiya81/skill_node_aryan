@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@800&display=swap');
 *{
  margin: 0;
  padding: 0;   
@@ -7,14 +8,12 @@
 }
 
 .navo{
-    /* padding-left: 12px;
-    padding-right: 12px; */
-    /* margin-top: 0px; */
-    /* margin-left: 46px;
-    margin-right: 46px; */
     width: 100%;
+    font-size: 16px;
     display: flex;
     align-items: center;
+    position: fixed;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* .em{
@@ -28,3 +27,44 @@ a{
     margin: 20px;
     align-content: space-evenly;
 }
+
+.monfon{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 200px;
+    margin-left: 85px;
+    margin-top: 108px;
+    letter-spacing: -11.5PX;
+}
+
+.sec-1{
+    background-color: #fa4529;
+    width: 100%;
+}
+
+.crdiagfo{
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    margin-left: 90px;
+    font-size: 40px;
+    letter-spacing: -0.4px;
+}
+
+.godemegobufo{
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    margin-top: 138px;
+    margin-left: 90px;
+    font-size: 70px;
+    letter-spacing: -0.4px;
+    
+}
+
+.i1{
+    position: absolute;
+    right: 0px;
+    z-index: -2;
+    height: 1000px;
+    width: 1000px;
+}
+
+
