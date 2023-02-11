@@ -1,4 +1,4 @@
-let socket = io.connect("http://192.168.29.125050");
+let socket = io.connect("http://169.254.6.14:5050");
 
 var message = document.getElementById("message");
 var button = document.getElementById("send");
