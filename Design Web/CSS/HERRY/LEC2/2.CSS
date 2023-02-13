@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.red{
+    background: red;
+    color: white;
+}
+
+.green{
+    background-color: green;
+    color: aliceblue;
+}
+
+.b1{
+    height: 300px;
+    width: 300px;
+    color: white;
+    background-image: url(./im.jpeg);
+    
+    
+    
+    
+    /* background-repeat */
+    /* Keyword values */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: repeat; */
+    /* background-repeat: space; */
+    /* background-repeat: round; */
+
+    /* Two-value syntax: horizontal | vertical */
+    /* background-repeat: repeat space; */
+    /* background-repeat: repeat repeat; */
+    /* background-repeat: round space; */
+    /* background-repeat: no-repeat round; */
+
+    /* Global values */
+    /* background-repeat: inherit; */
+    /* background-repeat: initial; */
+    /* background-repeat: revert; */
+    /* background-repeat: unset; */
+
+
+    
+    
+    
+    /* background-size */
+    /* Keyword values */
+    /* background-size: cover; */
+    /* background-size: contain; */
+
+    /* One-value syntax */
+    /* the width of the image (height becomes 'auto')   */
+    /* background-size: 50%; */
+    /* background-size: 3.2em; */
+    /* background-size: 12px; */
+    /* background-size: auto; */
+
+    /* Two-value syntax */
+    /* first value: width of the image, second value:   height */
+    /* background-size: 50% auto; */
+    /* background-size: 3em 25%; */
+    /* background-size: auto 6px; */
+    /* background-size: auto auto; */
+
+    /* Multiple backgrounds */
+    /* background-size: auto, auto;  */
+    /* Not to be confused with `auto auto` */
+    /* background-size: 50%, 25%, 25%; */
+    /* background-size: 6px, auto, contain; */
+
+    /* Global values */
+    /* background-size: inherit; */
+    /* background-size: initial; */
+    /* background-size: revert; */
+    /* background-size: unset; */
+}
