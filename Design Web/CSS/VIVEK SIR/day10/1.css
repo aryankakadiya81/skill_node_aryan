@@ -1,0 +1,359 @@
+/* .grid-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  } */
+
+
+.wrapper{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: 4;
+  gap: 20px;
+  row-gap: 50px;
+}
+
+
+.grid-1{
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  padding: 30px;
+  grid-column-end: span 2;
+}
+
+.grid-2{
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  padding: 30px;
+  grid-column-end: span 2;
+
+}
+.grid-3{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 2;
+
+}
+.grid-4{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 2;
+
+}
+.grid-5{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 2;
+
+}
+.grid-6{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 2;
+
+}
+.grid-7{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 3;
+
+}
+.grid-8{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 3;
+}
+.grid-9{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 3;
+}
+.grid-10{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 3;
+}
+/* --------------- */
+.grid-11{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 4 ;
+}
+.grid-12{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 4 ;
+
+}
+.grid-13{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 4 ;
+
+}
+.grid-14{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 6 ;
+
+}
+.grid-15{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+  grid-column-end: span 6 ;
+
+}
+.grid-16{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-17{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-18{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-19{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-20{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+/* --------------- */
+
+.grid-21{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-22{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-23{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-24{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-25{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-26{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-27{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-28{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-29{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-30{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+
+/* --------------- */
+
+.grid-31{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-32{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-33{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-34{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-35{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-36{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-37{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-38{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-39{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+.grid-40{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+
+/* --------------- */
+
+.grid-41{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+.grid-42{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+.grid-43{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+.grid-44{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+.grid-45{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+.grid-46{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+.grid-47{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}
+
+.grid-48{
+  padding: 30px;
+  background-color: blueviolet;
+  border: 3px solid red;
+  text-align: center;
+}

@@ -605,3 +605,21 @@ nav > a:hover{
     color: black;
     margin-left: 50px;
 }
+
+.sec-8maindiv-2{  
+    display: flex;
+    margin-left: 200px;
+    margin-top: 30px;
+}
+
+.awward{
+    margin-left: 50px;
+}
+
+.poty{
+    margin-left: 160px;
+}
+
+.seepro{
+    margin-left: 160px;
+}
