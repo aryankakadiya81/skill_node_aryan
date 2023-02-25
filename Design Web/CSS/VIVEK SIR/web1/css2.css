@@ -557,6 +557,7 @@ nav > a:hover{
     background-image: url(./assat/asset25.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     display: flex;
 }
 
@@ -595,6 +596,9 @@ nav > a:hover{
 
 /* ------------------------------------------------- */
 
+
+
+
 .sec-8main123456{
     display: flex;
 }
@@ -607,9 +611,12 @@ nav > a:hover{
 }
 
 .sec-8maindiv-2{  
-    display: flex;
     margin-left: 200px;
     margin-top: 30px;
+}
+
+.sec-8maindiv-2-1{
+    display: flex;
 }
 
 .awward{
@@ -617,9 +624,214 @@ nav > a:hover{
 }
 
 .poty{
+    display: flex;
     margin-left: 160px;
 }
 
-.seepro{
+.poty1{
+    display: flex;
+    margin-left: 170px;
+}
+
+.poty2{
+    display: flex;
     margin-left: 160px;
+}
+
+.po2021{
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.year{
+    font-size: 18px;
+    color: #666666;
+}
+
+.seepromain{
+    margin-left: 160px;
+}
+
+.spabrand{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #666666;
+}
+
+.DesignInspiration{
+    font-size: 24px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.seepromain{
+    margin-left: 300px;
+}
+
+.seepro{
+    font-size: 18px;
+    color: #666666;
+}
+
+.seepro-1{
+    margin-top: 75px;
+    font-size: 18px;
+    color: #666666;
+    padding-bottom: 70px;
+}
+
+.sec-8maindiv-2-1{
+    border-bottom: 2px solid black;
+}
+
+/* ------------------------------------- */
+
+.sec-8maindiv-2-2{
+    display: flex;
+    margin-top: 10px;
+    border-bottom: 2px solid black;
+}
+
+.seepromain-2{
+    margin-left: 140px;
+}
+
+.seepro-3{
+    margin-bottom: 70px;
+    font-size: 18px;
+    color: #666666;
+}
+
+/* ------------------------------------- */
+
+
+.sec-8maindiv-2-3{
+    display: flex;
+    margin-top: 10px;
+}
+
+.seepromain-3{
+    margin-left: 140px;
+}
+
+.blnakspaceofsec-8{
+    width: 1500px; 
+    height: 160px; 
+    border-bottom: #000000 2px solid;
+    margin-left: 40px;
+}
+
+/* ------------------------------------- */
+
+.blnakspaceofsec-9-1{
+    width: 100%; 
+    height: 160px; 
+
+}
+
+.sec-9grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    margin-left: 35px;
+}
+
+.sec9i1{
+    background-image: url(./assat/asset19.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 607px;
+    width: 468px;
+}
+
+.sec9i2{
+    background-image: url(./assat/asset20.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 607px;
+    width: 468px;
+}
+
+.sec9i3{
+    background-image: url(./assat/asset21.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 607px;
+    width: 468px;
+}
+
+.sec9i1cont1{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 530px;
+    margin-left: 20px;
+
+}
+.sec9i1cont2{
+    color: #ffffff;
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* ------------------------------------- */
+
+
+.sec-10{
+    background-color: #f5f5f5;    
+}
+
+
+.mainclassofsec10grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+
+.bostyobu{
+    display: grid;
+    row-gap: 30px;
+    margin-left: 30px;
+    width: 751px; 
+    /* height: 342px;  */
+}
+
+.bostyobugrid1{
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+
+.startby-1{
+    display: flex;
+}
+.startbymain{
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+.startbymain-1{
+    font-size: 42px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #fa4529;
+    text-decoration: underline solid 5px;
+}
+
+.addofbostyobu{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #666666;
+}
+
+.emailofbostyobu{
+    font-size: 38px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 150px;
 }
