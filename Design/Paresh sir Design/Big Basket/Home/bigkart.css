@@ -1,0 +1,9 @@
+.bg-image {
+    margin: 0;
+    background-image: url(".././Assats/home.jpg");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+}

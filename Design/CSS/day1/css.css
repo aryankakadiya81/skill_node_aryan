@@ -1,0 +1,197 @@
+/* @import "./css1.css"; */
+/* p{
+background-color: green;
+color: white;
+left: 20%;
+height: 100px;
+    width: 300px;
+    text-align: center;
+} */
+
+/* .para
+{
+    background-color: black;
+    color: white;
+    left: 20%;
+    height: 100px;
+    width: 300px;
+    text-align: center;   
+}
+#an123
+{
+    background-color: blue;
+    color: white;
+    left: 20%;
+    height: 100px;
+    width: 300px;
+    text-align: center;
+}*/
+
+/* .div-1{
+    background-color: black unset;
+    color: red ;
+    width: 200px unset;
+}
+.div-2{
+    background-color: blue unset;
+    color: blue unset;
+    height: 110px unset;
+    width: 100px;
+}  */
+
+
+/* .div ,.par{
+    color: black;
+    background-color: bisque;
+} */
+
+/* one type of child selector */
+/* div p{
+    color: black;
+    background-color: bisque;
+} */
+/* .div .par{
+    color: black;
+    background-color: bisque;
+} */
+
+/* .div > p{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;
+} */
+
+/* .div > p, h1{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;
+} */
+
+/* h1 + p{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;
+} */
+
+/* h1 + p + b{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;
+} */
+
+/* h1 ~ p{
+    color: black;
+    background-color: bisque;
+    text-decoration: underline;   
+} */
+
+/* .op1:link{
+    color: blue;
+} */
+
+/* a:active{
+    color: green;
+
+} 
+a:hover{
+    background-color: darkorange;
+}
+
+a:visited{
+    color: aqua;
+}*/
+
+/* .ba-1{
+    height: 180px;
+    width: 180px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+} */
+.ba-2{
+    width: auto;
+    height: auto;
+    background-image: url("p/12.jpg");
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat; */
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-repeat: space; */
+    /* background-repeat: round; */
+    
+    /* background-size: cover; */
+    /* background-size: contain; */
+
+    /* background-position: bottom; */
+    /* background-position: top; */
+    /* background-position: right; */
+    /* background-position: left; */
+
+
+    /* background-attachment: fixed; */
+    /* background-attachment: scroll; */
+}
+
+.ligr{
+    height: 500px;
+    width: 100%;
+    /* background: linear-gradient(to right,red,green,black,pink,green,red); */
+    /* background: linear-gradient(to left,red,green,black,pink,green,red); */
+    /* background: linear-gradient(to top,red,green,black,pink,green,red); */
+    background: linear-gradient(to bottom,red,green,black,pink,green,red);
+}
+
+.diligr{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to top left,red,green,black,pink,green,red);
+    /* background: linear-gradient(to top right,red,green,black,pink,green,red); */
+    /* background: linear-gradient(to bottom right,red,green,black,pink,green); */
+    /* background: linear-gradient(to bottom left,red,green,black,pink,green); */
+
+}
+
+.ligrrai
+{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to left,red,orange,yellow,green,blue,indigo,violet);
+}
+
+.raligrsi{
+    height: 500px;
+    width: 100%;
+    background: radial-gradient(red,orange,yellow,green,blue,indigo,violet);
+}
+
+.raligrsi{
+    height: 500px;
+    width: 100%;
+    background: radial-gradient(red,orange,yellow,green,blue,indigo,violet);
+}
+
+.repragr{
+    height: 500px;
+    width: 100%;
+    background: repeating-radial-gradient(red ,orange 25%,blue 25%,violet 25%);
+}
+
+.ragr{
+    height: 500px;
+    width: 100%;
+    /* background: radial-gradient(circle farthest-corner at right, red, blue); */
+    /* background: radial-gradient(circle farthest-corner at top, red, blue); */
+    /* background: radial-gradient(circle farthest-corner at left, red, blue); */
+    /* background: radial-gradient(circle farthest-corner at bottom, red, blue, green, orange, violet); */
+}
+
+.bullseye{
+    height: 100vh;
+    width: 100%;
+    /* background: repeating-radial-gradient(purple , white 10%, green 10%); */
+}
+
+.waarn{
+    height: 500px;
+    width: 100%;
+    /* background: repeating-linear-gradient(45deg, yellow, yellow 10%, black 10%, black 20%); */
+}
