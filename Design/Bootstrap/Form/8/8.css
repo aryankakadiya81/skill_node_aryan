@@ -1,0 +1,14 @@
+.form-control:focus {
+    box-shadow: 0 0;
+}
+
+.form-select:focus{
+    box-shadow: 0 0;
+}
+
+.bg-image{
+    background-image: url(../../assats/pexels-btgl-♡-3894157.jpg); 
+    background-position: center; 
+    background-size: 100% 100%; 
+    background-repeat: no-repeat;
+}
