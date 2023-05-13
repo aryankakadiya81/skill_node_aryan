@@ -1,0 +1,60 @@
+@use 'index' as *;
+@use 'aryan';
+
+$height-1:100;
+
+// @mixin flexbox($flex){
+//     display: $flex;
+//     justify-content: center;
+//     align-items: center;
+//     @content;
+//     @include size;
+// }
+
+// @mixin size{
+//     height: 100px;
+//     width:100px;
+// }
+
+
+// .font{
+//     @include flexbox(flex){
+//         border:10px solid red;
+//     }
+
+// }
+
+// .box{
+//     @include flexbox(inline);
+// }
+
+
+
+
+// .font {
+//     color: $color-1;
+//     background-color: $color-3;
+//     font-size: $size-1;
+// }
+
+%shared-css{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%font-size{
+    font-size: 10px;
+    font-variant:small-caps;
+}
+
+.font{
+    @extend %shared-css;
+}
+.box{
+    @extend %shared-css;
+    height: $height-1+px;
+    #{&}-1{
+        width: 100px;
+    }
+}

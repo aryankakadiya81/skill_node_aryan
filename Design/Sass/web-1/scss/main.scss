@@ -1,0 +1,194 @@
+@use 'index' as *;
+
+// sass --watch scss/main.scss web.css
+
+.news-sec {
+    background-color: $col-grey;
+
+}
+
+
+.news-sec-1 {
+    padding-left: 100px;
+    padding-top: 141px;
+}
+
+.title-1 {
+    color: $col-red;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.title-2 {
+    color: white;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    padding-bottom: 80px;
+}
+
+.image-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 100px;
+}
+
+.inner-img {
+    height: 370px;
+    width: 337px;
+    border-radius: 5%;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+// .arrow-div-img{
+//     height: 30px;
+//     width: 30px;
+//     transform: rotate(180deg);
+//     color: white;
+// }
+
+// .arrow-div-img1{
+//     height: 30px;
+//     width: 30px;
+//     color: white;
+// }
+
+.arrow-div{
+    display: flex;
+    justify-content: end;
+    margin-right: 80px;
+}
+
+.fa-solid{
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 100px;
+
+}
+
+.fa-solid:hover{
+    color: black;
+
+}
+
+
+.fa-arrow-right{
+    margin-left: 30px;
+
+}
+
+
+
+// --------------------------------------------------------------------
+
+
+.feedback-sec{
+    background-color: #303134;
+    // display: flex;
+    // justify-content: center;
+}
+
+.flexdiv{
+    display: flex;
+}
+.para{
+    color: #a7afbd;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+
+}
+
+.title-3 {
+    color: white;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    padding-bottom: 20px;
+}
+
+.mainsec-2{
+    padding-left: 100px;
+}
+
+.fa-location-dot, .fa-phone-volume, .fa-envelope, .fa-chrome{
+    font-size: 20px;
+    color: rgb(0, 217, 255);
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 20px;
+}
+
+.location{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input{
+    color: #a7afbd;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #303134;
+    border: 1px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 250px;
+    margin-bottom: 30px;
+}
+
+.inputi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.inputi:hover{
+    background-color: black;
+
+}
+
+.formsec{
+    padding-top: 230px;
+    padding-left: 200px;
+    margin-bottom: 110px;
+}
+
+// ------------------------------------
+
+
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.Copyright{
+    padding: 50px;
+    font-size: 20px;
+    padding-left: 100px;
+}
+
+.fa-facebook-f, .fa-twitter, .fa-instagram, .fa-basketball, .fa-tiktok{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+
+.icons{
+
+    margin-left: 460px;
+}

@@ -1,0 +1,20 @@
+.main {
+  height: 400px;
+  width: 400px;
+  background-color: red;
+}
+
+.box, .font {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 100px;
+}
+.box .box-1 {
+  width: 100px;
+}
+
+/*# sourceMappingURL=output.css.map */
