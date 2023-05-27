@@ -230,7 +230,7 @@
 
 
 .news-sec {
-    background-color: $col-grey;
+    background-color: #494b50;
 
 }
 
@@ -241,7 +241,7 @@
 }
 
 .title-1 {
-    color: $col-red;
+    color: red;
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: bold;
@@ -312,7 +312,6 @@
     color: #a7afbd;
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 40px;
 
 }
 
@@ -411,4 +410,178 @@
 .icons {
 
     margin-left: 460px;
+}
+
+
+// ----------------------------------------------------------------------------
+
+
+
+// section-3
+.container{
+    height: 770px;
+    .section-3{
+        background-color: $color-b;
+        .kura1{
+            display: $d-flex;
+            justify-content: $jcsa;
+            .div-left{
+                padding: 100px;
+            }
+            .t1{
+                font-size: $fs-1;
+                color: $color-org;
+                font-family: $font-f;
+                font-weight: $fw-500;
+            }
+            h3{
+                margin-top:$mt-30;
+                font-size: $fs-2;
+                color: $color-w;   
+                font-family: $font-f;
+                font-weight: $fw-bold;
+            }
+            .para{
+                color: $color-c;
+                max-width: $mw-475;
+                font-size: $fs-18;
+                line-height: $line-h-25;
+            }
+            .progress{
+                margin-top: $mt-50;
+                width: $w-100;
+                // display: flex;
+                .p1{
+                    margin-bottom: $mb-20;
+                }
+                span{
+                    color: $color-w;
+                    display: $d-flex;
+                    justify-content: $jcsb;
+                }
+                .pro1{
+                    width: $w-95;
+                }
+                .pro2{
+                    width: $w-80;
+                }
+                .pro3{
+                    width:$w-90;
+                }
+                .pro1,.pro2,.pro3{
+                    background: hsla(0,0%,100%,.09);
+                    // min-width: 100%;
+                    position: relative;
+                    height: $h-9;
+                    background: $color-org;
+                    margin-bottom: $mb-40;
+                    .bar-open{
+                        width:$w-100;
+                        .bar-in{
+                            height:$h-100;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+            .div-right{
+                margin-top: $mt-70;
+                .img{
+                    height: 80%;
+                    margin-top: $mt-70;
+                    margin-right:-30px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+
+
+// section-4
+.container1{
+    .section-4{
+        background-color: $bg-gray;
+        .kura2{
+            padding: 90px;
+            .t1{
+                margin-top: $mt-50;
+                font-size: $fs-1;
+                color: $color-org;
+                font-family: $font-f;
+                font-weight: $fw-500;
+            }
+            h3{
+                margin-top:$mt-30;
+                font-size: $fs-2;
+                color: $color-w;   
+                font-family: $font-f;
+                font-weight: $fw-bold;
+            }
+            .div2{
+                margin-top: $mt-30;      
+            }
+            ul{
+                li{
+                    display: $d-flex;
+                    justify-content: $jcsa;
+                    border-bottom: 0.5px solid $color-c;
+                    .c1,.c3{
+                        color: $color-c;
+                        font-size: $fs-18;
+                        margin: $m-40;
+                    }
+                    .c2{
+                        margin: $m-40;
+                        color: $color-w;
+                        font-size: $fs-18;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+// -------------------------------------------------------------------
+
+.price-sec{
+    background-color: #303134;
+    padding-top: 100px;
+    padding-left: 100px;
+    display: flex;
+    padding-bottom: 100px;
+    .title-1{
+        margin-top: 40px;
+    }
+    .main-div-of-sec{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #494b50;
+        padding: 30px;
+        font-size: 20px;
+        margin-left: 130px;
+        border-radius: 20px;
+        width: 430px;
+        margin-top: 30px;
+
+    }
+
+    .main-div-of-sec:hover{
+        background-color: red;
+        padding: 30px;
+        font-size: 20px;
+        margin-left: 130px;
+        border-radius: 20px;
+    }
+    .price-desc{
+        display: flex;
+        justify-content: left;  
+        text-align: left;
+    }
+    .price-of-desc{
+        text-align: right;
+    }
+
 }
