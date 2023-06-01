@@ -863,7 +863,7 @@
 //     console.log(`${stocks.Fruits[fruit]} selected and Order placed. Please call production`)
 //     call_production;
 // };
-    
+
 // let production = () =>{
 //     console.log("Production has started")
 //     setTimeout(()=>{
@@ -923,7 +923,7 @@
 //   .then(()=>{
 //     return order(0000,()=>console.log('production has started'))
 //   })
-  
+
 //   .then(()=>{
 //     return order(2000, ()=>console.log("Fruit has been chopped"))
 //   })
@@ -1014,7 +1014,7 @@
     2) async & await keywords
 */
 // ------------------------------------------------------------------------
-   
+
 // promise1.then -----------------------------------------    
 // let promise1 = new Promise((resolve,reject) =>
 // {
@@ -1247,7 +1247,7 @@
 //     { name: 'Sam', grade: 65 },
 //     { name: 'Katie', grade: 90 }
 //   ];
-  
+
 //   const studentGrades = students.filter(student => student.grade >= 90);
 //   console.log( studentGrades); 
 
@@ -1364,8 +1364,8 @@
 
 // getStudentName.apply(student1,["Surat","Guj","Ind"]); // ARYAN - Surat - Guj - Ind
 // getStudentName.apply(student1,["Surat","Guj"]); // ARYAN - Surat - Guj - undefined
- 
-   
+
+
 // getStudentName = function() 
 // {
 //     console.log(`${this.name}`);
@@ -1421,7 +1421,7 @@
 //     // );
 //     //read the data by using [] opearator
 //     // console.log(
-        
+
 //     //     obj["sub_one"],
 //     //     obj["sub_two"],
 //     //     obj["sub_three"]
@@ -1456,7 +1456,7 @@
 // <script>
 //     let obj1 = {"key1":"Hello_1"};
 //     console.log( typeof obj1 );         //object
-    
+
 //     let str1 = JSON.stringify(obj1);
 //     console.log( typeof str1 );         //string
 
@@ -1543,3 +1543,83 @@
 
 
 
+
+
+// wrong ??????????????????????????????????????????
+// let string = "";
+
+// let j= 74;
+// let a = 65;
+// let v = 86;
+// // let a = 65;
+// let s = 83;
+// let c = 67;
+// let r = 82;
+// let p = 73;
+// let i = 80;
+// let t = 84;
+
+
+// for (let i = 1; i <= 7; i++) {
+
+//     for (let j = 0; j < i; j++) {
+//         if (j == 74) {
+//             string += String.fromCharCode(74);//j
+//         }
+//         if (a == 65){
+//             // string += String.fromCharCode(74);//j
+//             string += String.fromCharCode(65);//a
+//         }
+//         if(v==86)
+//         {
+//             // string += String.fromCharCode(74);//j
+//             // string += String.fromCharCode(65);//a
+//             string += String.fromCharCode(86);//v
+//             // string += String.fromCharCode(65);//a
+//             // string += String.fromCharCode(83);//s
+//             // string += String.fromCharCode(67);//c
+//             // string += String.fromCharCode(82);//r
+//             // string += String.fromCharCode(73);//i
+//             // string += String.fromCharCode(80);//p
+//             // string += String.fromCharCode(84);//t
+//         }
+//         if(a==65)
+//         {
+//             // string += String.fromCharCode(74);//j
+//             // string += String.fromCharCode(65);//a
+//             // string += String.fromCharCode(86);//v
+//             string += String.fromCharCode(65);//a
+//         }
+//         if(s==83)
+//         {
+//             // string += String.fromCharCode(74);//j
+//             // string += String.fromCharCode(65);//a
+//             // string += String.fromCharCode(86);//v
+//             // string += String.fromCharCode(65);//a
+//             string += String.fromCharCode(83);//s
+//         }
+//         if(c==67)
+//         {
+//             // string += String.fromCharCode(74);//j
+//             // string += String.fromCharCode(65);//a
+//             // string += String.fromCharCode(86);//v
+//             // string += String.fromCharCode(65);//a
+//             // string += String.fromCharCode(83);//s
+//             string += String.fromCharCode(67);//c
+//         }
+//         if(r==82)
+//         {
+//             // string += String.fromCharCode(74);//j
+//             // string += String.fromCharCode(65);//a
+//             // string += String.fromCharCode(86);//v
+//             // string += String.fromCharCode(65);//a
+//             // string += String.fromCharCode(83);//s
+//             // string += String.fromCharCode(67);//c
+//             string += String.fromCharCode(82);//r
+//         }
+
+//     }
+//     string += "\n";
+// }
+// console.log(string);
+// ??????????????????????????????????????????
