@@ -1,0 +1,11 @@
+.navbar{
+    background-image: linear-gradient(to right, rgb(148, 148, 250) ,rgb(98, 32, 95));
+}
+.details{
+    color: rgb(98, 32, 95);
+}
+.btn{
+    background-image: linear-gradient(to right, rgb(148, 148, 250) ,rgb(98, 32, 95));
+    border: none;
+    color: white;  
+}

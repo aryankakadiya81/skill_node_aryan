@@ -1,0 +1,92 @@
+{
+    "user": [
+        {
+            "id": 1,
+            "sno": "70604",
+            "image": "https://freepngimg.com/thumb/potato/7-potato-png-images-pictures-download-thumb.png",
+            "name": "Potatos",
+            "category": "Vegetables",
+            "qty": "25",
+            "price": "₹45.00",
+            "edit": "https://cdn-icons-png.flaticon.com/512/1827/1827933.png",
+            "delete": "https://cdn-icons-png.flaticon.com/512/484/484611.png"
+        },
+        {
+            "id": 2,
+            "sno": "70605",
+            "image": "https://freepngimg.com/thumb/cabbage/3-2-cabbage-picture.png",
+            "name": "Cabbage",
+            "category": "Vegetables",
+            "qty": "35",
+            "price": "₹16.00",
+            "edit": "https://cdn-icons-png.flaticon.com/512/1827/1827933.png",
+            "delete": "https://cdn-icons-png.flaticon.com/512/484/484611.png"
+        },
+        {
+            "id": 3,
+            "sno": "70606",
+            "image": "https://freepngimg.com/thumb/avocado/7-2-avocado-transparent-thumb.png",
+            "name": "Avacado",
+            "category": "Fruit",
+            "qty": "36",
+            "price": "₹45.00",
+            "edit": "https://cdn-icons-png.flaticon.com/512/1827/1827933.png",
+            "delete": "https://cdn-icons-png.flaticon.com/512/484/484611.png"
+        },
+        {
+            "id": 4,
+            "sno": "70607",
+            "image": "https://freepngimg.com/thumb/apple/7-2-apple-fruit-png-thumb.png",
+            "name": "Apple Red",
+            "category": "Fruit",
+            "qty": "15",
+            "price": "₹95.00",
+            "edit": "https://cdn-icons-png.flaticon.com/512/1827/1827933.png",
+            "delete": "https://cdn-icons-png.flaticon.com/512/484/484611.png"
+        },
+        {
+            "id": 5,
+            "sno": "70608",
+            "image": "https://freepngimg.com/thumb/carrot/22147-8-carrot-cutting-pieces-thumb.png",
+            "name": "Carrot",
+            "category": "Vegetables",
+            "qty": "40",
+            "price": "₹39.00",
+            "edit": "https://cdn-icons-png.flaticon.com/512/1827/1827933.png",
+            "delete": "https://cdn-icons-png.flaticon.com/512/484/484611.png"
+        },
+        {
+            "id": 6,
+            "sno": "70609",
+            "image": "https://freepngimg.com/thumb/kiwi/20-kiwi-png-image-fruit-kiwi-png-pictures-download-thumb.png",
+            "name": "Kiwi",
+            "category": "Fruit",
+            "qty": "20",
+            "price": "₹100.00",
+            "edit": "https://cdn-icons-png.flaticon.com/512/1827/1827933.png",
+            "delete": "https://cdn-icons-png.flaticon.com/512/484/484611.png"
+        },
+        {
+            "id": 7,
+            "sno": "70610",
+            "image": "https://freepngimg.com/thumb/tomato/1-2-tomato-png-file-thumb.png",
+            "name": "Tomato",
+            "category": "Vegetables",
+            "qty": "50",
+            "price": "₹20.00",
+            "edit": "https://cdn-icons-png.flaticon.com/512/1827/1827933.png",
+            "delete": "https://cdn-icons-png.flaticon.com/512/484/484611.png"
+        },
+        {
+            "id": 8,
+            "sno": "706011",
+            "image": "https://freepngimg.com/thumb/strawberry/14-2-strawberry-png-images-thumb.png",
+            "name": "Strawberry",
+            "category": "Fruit",
+            "qty": "25",
+            "price": "₹80.00",
+            "edit": "https://cdn-icons-png.flaticon.com/512/1827/1827933.png",
+            "delete": "https://cdn-icons-png.flaticon.com/512/484/484611.png"
+        }
+    ]
+}

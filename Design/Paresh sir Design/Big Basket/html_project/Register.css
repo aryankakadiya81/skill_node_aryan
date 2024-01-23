@@ -1,0 +1,19 @@
+.navbar {
+    background-image: linear-gradient(to right, rgb(148, 148, 250), rgb(98, 32, 95));
+}
+
+.registerPage {
+    box-shadow: 0px 0px 10px;
+    margin-top: 50px;
+    width: 400px;
+}
+
+.registar {
+    background-color: rgb(156, 156, 206);
+    color: white;
+}
+
+.btn {
+    background-image: linear-gradient(to right, rgb(148, 148, 250), rgb(98, 32, 95));
+    border: none;
+}

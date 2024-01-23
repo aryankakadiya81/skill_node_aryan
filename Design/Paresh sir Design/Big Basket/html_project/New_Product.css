@@ -1,0 +1,16 @@
+.navbar{
+    background-image: linear-gradient(to right, rgb(148, 148, 250) ,rgb(98, 32, 95));
+}
+.new{
+    color: rgb(98, 32, 95);
+}
+.up-pr{
+    margin-top: 80px;
+}
+.update-product{
+    background-color: rgb(148, 148, 250);
+}
+.btn{
+    background-image: linear-gradient(to right, rgb(148, 148, 250) ,rgb(98, 32, 95));
+    border: none;
+}

@@ -1,0 +1,14 @@
+.navbar{
+    background-image: linear-gradient(to right, rgb(148, 148, 250) ,rgb(98, 32, 95));
+}
+.login{
+    background-color: rgb(148, 148, 250);
+    color: white;
+}
+.btn{
+    background-image: linear-gradient(to right, rgb(148, 148, 250) ,rgb(98, 32, 95));
+    border: none;
+}
+.loginPage {
+    box-shadow: 0px 0px 10px;
+}

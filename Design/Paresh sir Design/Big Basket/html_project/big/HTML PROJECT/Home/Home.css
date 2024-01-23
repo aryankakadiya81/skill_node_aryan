@@ -1,0 +1,9 @@
+.bg-image {
+    margin: 0;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/854/972/859/vegetables-rice-still-life-dark-wallpaper-preview.jpg");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+}

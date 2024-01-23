@@ -1,0 +1,12 @@
+.navbar{
+    background-image: linear-gradient(to right, rgb(148, 148, 250) ,rgb(98, 32, 95));
+}
+.bg-image {
+    margin: 0;
+    background-image: url("https://wallpapercave.com/wp/wp3106251.jpg");
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+}
